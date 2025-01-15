@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* ----- Variables (Converted to actual values) ----- */
+:root {
+    --color-primary: #4c4c4c;
+    --color-secondary: #a6a6a6;
+    --color-highlight: #ff3f40;
+  }
+  
+  /* ----- Global ----- */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: 1fr;
+    font-family: Arial, sans-serif; /* Replace "Raleway" if not imported */
+    background-color: #ffffff;
+  }
+  
+  h3 {
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
+    color: var(--color-secondary);
+  }
+  
+  /* img {
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 3px var(--color-secondary));
+  } */
+  
+  /* ----- Product Section ----- */
+  .product {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    margin: auto;
+    padding: 2.5em 0;
+    min-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* ----- Photo Section ----- */
+  .product__photo {
+    position: relative;
+  }
+  
+  .photo-container {
+    position: absolute;
+    left: -2.5em;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .photo-main {
+    border-radius: 6px 6px 0 0;
+    background-color: #9be010;
+    background: radial-gradient(#e5f89e, #96e001);
+  }
+  
+  .photo-main .controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+    color: #fff;
+  }
+  
+  .photo-main .controls i {
+    cursor: pointer;
+  }
+  
+  .photo-main img {
+    position: absolute;
+    left: -3.5em;
+    top: 2em;
+    max-width: 110%;
+    filter: saturate(150%) contrast(120%) hue-rotate(10deg)
+      drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+  }
+  
+  .photo-album {
+    padding: 0.7em 1em;
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+  }
+  
+  .photo-album ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .photo-album li {
+    float: left;
+    width: 55px;
+    height: 55px;
+    padding: 7px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 3px;
+  }
+  
+  /* ----- Informations Section ----- */
+  .product__info {
+    padding: 0.8em 0;
+  }
+  
+  .title h1 {
+    margin-bottom: 0.1em;
+    color: var(--color-primary);
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  
+  .title span {
+    font-size: 0.7em;
+    color: var(--color-secondary);
+  }
+  
+  .price {
+    margin: 1.5em 0;
+    color: var(--color-highlight);
+    font-size: 1.2em;
+  }
+  
+  .price span {
+    padding-left: 0.15em;
+    font-size: 2.9em;
+  }
+  
+  .variant {
+    overflow: auto;
+  }
+  
+  .variant h3 {
+    margin-bottom: 1.1em;
+  }
+  
+  .variant li {
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .variant li:first-child,
+  .variant li:hover {
+    border: 1px solid var(--color-secondary);
+  }
+  
+  .variant li:not(:first-child) {
+    margin-left: 0.1em;
+  }
+  
+  .description {
+    clear: left;
+    margin: 2em 0;
+  }
+  
+  .description h3 {
+    margin-bottom: 1em;
+  }
+  
+  .description ul {
+    font-size: 0.8em;
+    list-style: disc;
+    margin-left: 1em;
+  }
+  
+  .description li {
+    text-indent: -0.6em;
+    margin-bottom: 0.5em;
+  }
+  
+  .buy--btn {
+    padding: 1.5em 3.1em;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    color: #fff;
+    background-color: var(--color-highlight);
+    box-shadow: 2px 2px 25px -7px var(--color-primary);
+    cursor: pointer;
+  }
+  
+  .buy--btn:active {
+    transform: scale(0.97);
+  }
+  
+  /* ----- Footer Section ----- */
+  footer {
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer a {
+    color: var(--color-primary);
+  }
+  
+  footer a:hover {
+    color: var(--color-highlight);
+  }
+  
+
+/* Section Container Styling */
+#jeff-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Make it take up the full viewport height */
+    padding: 2rem;
+    background-color: #f5f5f5; /* Light background to contrast with content */
+    border-radius: 20px; /* Rounded corners for the section */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Existing Styles */
+#jeff {
+    margin-top: 0;
+    width: 90%; /* Adjust width for responsiveness */
+    aspect-ratio: 3 / 1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: white; /* Optional background */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+#row1, #row2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-10deg);
+}
+
+#row1 {
+    top: -50%;
+    left: -10%;
+}
+
+#row2 {
+    top: 20%;
+    left: -10%;
+}
+
+.stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: infiniteLeft 50s linear infinite;
+}
+
+.reverse {
+    animation: infiniteRight 50s linear infinite;
+    transform: translateX(-100%);
+}
+
+.imagen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    margin: 0.4%;
+    border-radius: 20px;
+    filter: blur(0.5px);
+}
+
+/* Animations */
+@keyframes infiniteLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes infiniteRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+  font-size: 18px;
+}
+
+/* Off Canvas Cart */
+
+.offcanvas {
+    background: #ffffff;
+    border-left: 2px solid #f7c13e;
+}
+.offcanvas-title {
+    font-weight: bold;
+    color: #9c3103;
+}
+.cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+/* Shared Styles */
+button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Primary Button */
+button.btn-primary {
+  background-color: #f0f7f8; /* Light pastel background */
+  border-color: #a6c3c9; /* Neutral border */
+  color: #2f4f4f; /* Dark slate gray text */
+}
+button.btn-primary:hover {
+  background-color: #daeef0; /* Slightly darker pastel */
+  border-color: #8ca3af;
+  color: #2f4f4f;
+}
+button.btn-primary:hover .btn-icon {
+  display: inline; /* Show the icon on hover */
+}
+button.btn-primary:active {
+  transform: scale(0.98); /* Click effect */
+}
+
+/* Outline Button */
+button.btn-outline-primary {
+  background-color: transparent;
+  border-color: #8ca3af; /* Neutral gray-blue border */
+  color: #8ca3af; /* Neutral text */
+}
+button.btn-outline-primary:hover {
+  background-color: #f4f8f9; /* Light pastel background on hover */
+  color: #46545a; /* Slightly darker text */
+  border-color: #627d88; /* Slightly darker border */
+}
+button.btn-outline-primary:hover .btn-icon {
+  display: inline; /* Show the icon on hover */
+}
+button.btn-outline-primary:active {
+  transform: scale(0.98); /* Click effect */
+}
+
+/* Icon Styling */
+button .btn-icon {
+  font-size: 16px;
+  display: none; /* Initially hidden */
+  transition: all 0.3s ease;
+}
+
+
+
+/* Customizing the dots */
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: #000000; /* Default dot color */
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: #6c757d; /* Highlighted dot color */
+}
+
+

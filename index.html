@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BHARATH SNACKS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!--<div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
+                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span>+012 345 6789</span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
+            <h1 class="m-0" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="#section_2" class="nav-item nav-link">About</a>
+                <a href="product.html" class="nav-item nav-link">Products</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="bi bi-list"></i>
+                    </a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item">Contact</a>
+                        <a href="#" class="dropdown-item">Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-sm p-0 me-3"><i class="fa fa-search"></i></button>
+                <button type="button" class="btn btn-sm p-0 me-3"><i class="fa fa-user"></i></button>
+                <button type="button" class="btn btn-sm p-0 me-3 position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0</span>
+                </button>
+                <button type="button" class="btn btn-sm p-0 position-relative" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shopping Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel">
+        <div class="offcanvas-header">
+            <h5 id="shoppingCartLabel" class="offcanvas-title">Shopping Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart-item d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                    <div>
+                        <h6 class="m-0">Murukku</h6>
+                        <small class="text-muted">100 g</small>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-sm btn-outline-primary me-2" onclick="updateQuantity(-1)">-</button>
+                    <span id="quantity">1</span>
+                    <button class="btn btn-sm btn-outline-primary ms-2" onclick="updateQuantity(1)">+</button>
+                  </div>
+            </div>
+            <hr>
+            <h6 class="text-muted">You may also like</h6>
+            <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <!-- Item 1 -->
+                  <div class="carousel-item active">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img src="img/bnac/sev.png" alt="Suggestion 1" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                        <div>
+                          <h6 class="m-0">Sakkarai Pongal Mix</h6>
+                          <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px; left: -10px;">
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  
+              
+                  <!-- Item 2 -->
+                  <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                      <img src="img/bnac/all.png" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                      <div>
+                        <h6 class="m-0">Rava Laddu Mix</h6>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                      <img src="img/bnac/ka.png" alt="Suggestion 3" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                      <div>
+                        <h6 class="m-0">Chikkis</h6>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                      <img src="img/bnac/oorud.png" alt="Suggestion 4" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                      <div>
+                        <h6 class="m-0">Kadala Orundai</h6>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Add more items as needed -->
+                </div>
+                  
+              </div>              
+            <hr>
+            <div class="d-flex justify-content-between">
+                <h6 class="m-0">Subtotal</h6>
+                <h6 class="m-0">Rs. 149.00</h6>
+            </div>
+            <div class="mt-3">
+                <button class="btn-primary w-100 d-flex align-items-center justify-content-center">
+                  <i class="btn-icon me-2">🛒</i> Checkout
+                </button>
+                <button class="btn-outline-primary w-100 mt-2 d-flex align-items-center justify-content-center">
+                  <i class="btn-icon me-2">🔄</i> Update Cart
+                </button>
+            </div>
+              
+              
+        </div>
+    </div>
+
+    
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/bnac/n2.png" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8 text-start">
+                                    <!-- <p class="fs-4 text-white">Welcome to our dairy farm</p> -->
+                                    <!-- <h1 class="display-1 text-white mb-5 animated slideInRight">The Farm of Dairy products</h1> -->
+                                    <!-- <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/bnac/w2.png" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                    <p class="fs-4 text-white">Welcome to Bharath Snacks</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">We Deliver all over the world</h1>
+                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="section_2">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0" style="color: goldenrod;">50</h1>
+                                <small class="fs-5 fw-bold">Years, since 1974</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/bnac/bag.png">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/bnac/sevu.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/bnac/shop.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="mb-4">Delicious, Nutritious, Authentic taste of the South.</h1>
+                    <p class="mb-4">Bharath Snacks is an accomplished Manufacturer, Exporter and Supplier of ready to eat Indian Sweets and Savories. It was founded in the year 1974. With over four decades of experience in business, we strive to continuously raise our benchmark by providing products of the highest quality and taste.</p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/award.png" alt="">
+                            <h5 class="mb-3">Quality matters!</h5>
+                            <span>Excellence in every detail.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/bnac/del.png" alt="">
+                            <h5 class="mb-3">Delivery On-Time</h5>
+                            <span>Swift and on-schedule every time.</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
+                <!-- <h1 class="mb-5">Services That We Offer For Entrepreneurs</h1> -->
+            </div>
+            
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/bnac/all.png" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/bnac/all.png" alt="">
+                            </div>
+                            <h5 class="mb-3">Gift Boxes</h4>
+                            <p class="mb-4">Wrap your love in our beautiful gift boxes.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/bnac/muruku.png" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/bnac/muruku.png" alt="">
+                            </div>
+                            <h5 class="mb-3">Snacks</h5>
+                            <p class="mb-4">Satisfy your cravings with our delicious snacks.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/bnac/rusk.png" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/bnac/rusk.png" alt="">
+                            </div>
+                            <h5 class="mb-3">Bakery</h5>
+                            <p class="mb-4">Indulge in the sweetness of our freshly baked treats.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">Bestsellers</p>
+                </div>
+                <a href="product.html" class="btn btn-primary">View All</a>
+            </div>
+            <div id="bestsellersCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row gx-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ka.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Chikkis</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/muk.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Murukku</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ru.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Wheat Rusk</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/oorud.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Kadala Orrundai</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row gx-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ru.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Wheat Rusk</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/oorud.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Kadala Orrundai</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ka.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Chikkis</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/all.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="">Kadala Orrundai</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev custom-control-prev" type="button" data-bs-target="#bestsellersCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next custom-control-next" type="button" data-bs-target="#bestsellersCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <style>
+        .custom-control-prev {
+            left: -140px; /* Move further to the left */
+        }
+    
+        .custom-control-next {
+            right: -140px; /* Move further to the right */
+        }
+    
+        @media (max-width: 768px) {
+            .custom-control-prev {
+                left: -20px; /* Adjust for smaller screens */
+            }
+    
+            .custom-control-next {
+                right: -20px; /* Adjust for smaller screens */
+            }
+        }
+    </style>
+    
+    <!-- Product End -->
+    
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner my-5 py-5" style="position: relative; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(3px); border-radius: 10px;" data-parallax="scroll" data-image-src="img/bnac/w3.png">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="img/bnac/sev.png" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">We Sell Best Products</h2>
+                            <p class="text-white mb-4">With a legacy of excellence, we offer you the best products, made with love and expertise</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="img/bnac/wordelivy.png" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">Crunch into freshness, delivered worldwide</h2>
+                            <p class="text-white mb-4">Indulge in the freshness of our snacks, carefully crafted and delivered worldwide for your snacking pleasure</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Banner End -->
+
+    <section id="jeff-container">
+        <div id="jeff">
+            <div id="row1">
+                <div class="stack">
+                    <div class="imagen" style="background-image: url('img/bnac/muk.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/muruku.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/ka.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/rusk.png');"></div>
+                </div>
+                <div class="stack back">
+                    <div class="imagen" style="background-image: url('img/bnac/ru.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/p-About-Us.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/sevu.jpg');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/all.png');"></div>
+                </div>
+            </div>
+            <div id="row2">
+                <div class="stack reverse">
+                    <div class="imagen" style="background-image: url('img/bnac/muk.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/muruku.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/ka.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/rusk.png');"></div>
+                </div>
+                <div class="stack reverse">
+                    <div class="imagen" style="background-image: url('img/bnac/ru.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/p-About-Us.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/sevu.jpg');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/all.png');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <!-- Gallery Start 
+    <div class="container-xxl py-5 px-0">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-5.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-1.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-2.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-6.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-7.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-3.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-4.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-8.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-8.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Gallery End -->
+
+
+    
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
+                <!-- <h1 class="mb-5">Experienced Team Members</h1> -->
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/found.png" alt="">
+                        <h5>N Ganesan</h5>
+                        <p class="text-primary">Founder, Head of Production</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/cofound.png" alt="">
+                        <h5>N Palanivel</h5>
+                        <p class="text-primary">Co-Founder, Head of Marketing</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/head.png" alt="">
+                        <h5>R Gunasekaran</h5>
+                        <p class="text-primary">Head of Engineering</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/HOD.png" alt="">
+                        <h5>S Gopinath</h5>
+                        <p class="text-primary">Head of Digital</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Features Start
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
+                    <h1 class="mb-4">Few Reasons Why People Choosing Us!</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Justo magna erat amet</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Clita erat ipsum et lorem et sit</p>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/experience.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">25</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Years Experience</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/award.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">183</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Award Winning</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/animal.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">2619</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Total Animals</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/client.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">51940</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Happy Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Features End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
+                <h1 class="mb-5">What People Say About Our Sweet Shop</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-img">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-1.jpg" alt="">
+                            <p class="fs-5">Ordered online and got it delivered fast. Neat packing. Fresh and latest stock was sent. Very happy. Have been getting their chikkis for over a decade. But first time tried online and very pleased. Thank you</p>
+                            <h5>Dhivya Srikanth</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-2.jpg" alt="">
+                            <p class="fs-5">Very pleased with the service!! The snacks I ordered online were fresh, crispy and delicious.</p>
+                            <h5>Andrea Alexander</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-3.jpg" alt="">
+                            <p class="fs-5">I am from Bangalore, tried your savouries. They were super fresh, crispy and tasty. Thanks.</p>
+                            <h5>Hariharan C</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-4.jpg" alt="">
+                            <p class="fs-5">Excellent products and very very cheap too.. no compromise on taste at all.. well done Bharath snacks!!</p>
+                            <h5>Niloufer Dsouza</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <!-- <h5 class="text-white mb-4">Our Logo</h5> -->
+                    <img src="img/bnac/logo.png" alt="Company Logo" class="img-fluid" style="max-width: 100%; height: auto;">
+                </div>
+                
+
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <a class="btn btn-link" href="">Home</a>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Products</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Policies</h5>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Refund and Returns</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms of Services</a>
+                    <a class="btn btn-link" href="">Refund Policy</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2/143-5, Thirumalpuram, Veerapandi Road, Oomachikulam, Madurai - 625014.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 97861 00191 / +91 72992 99294</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@bharathsnacks.in</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">BHARATH SNACKS</a>, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        function updateQuantity(change) {
+        var quantityElement = document.getElementById("quantity");
+        var currentQuantity = parseInt(quantityElement.innerText);
+    
+        // Ensure quantity is not negative
+        var newQuantity = currentQuantity + change;
+        if (newQuantity >= 0) {
+          quantityElement.innerText = newQuantity;
+        }
+      }
+    </script>
+
+</body>
+
+</html>
