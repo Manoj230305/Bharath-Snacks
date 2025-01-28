@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/prod.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <!-- Add your logo image here -->
+            <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
+            <h1 class="m-0" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item">Contact</a>
+                        <a href="#" class="dropdown-item">Services</a>
+                        <a href="#" class="dropdown-item">Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-sm p-0 me-3"><i class="fa fa-search"></i></button>
+                <button type="button" class="btn btn-sm p-0 me-3"><i class="fa fa-user"></i></button>
+                <button type="button" class="btn btn-sm p-0 me-3 position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0</span>
+                </button>
+                <button type="button" class="btn btn-sm p-0 position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Products</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Product Start -->
+    <div class="row">
+        <div class="col-md-4 mx-3 left-section">
+          <div class="product-thumbnails">
+            <img src="img/bnac/P3.jpg" alt="Thumbnail 3" data-image="p3.jpg" />
+            <img src="img/bnac/p1.jpg" alt="Thumbnail 1" data-image="p1.jpg" />
+            <img src="img/bnac/p5.jpg" alt="Thumbnail 2" data-image="p5.jpg" />
+            <img src="img/bnac/p3.jpg" alt="Thumbnail 3" data-image="p3.jpg" />
+          </div>
+          <div class="main-image-container">
+            <button class="arrow left-arrow">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <img src="img/bnac/p1.jpg" alt="Main Product Image" id="main-image" />
+            <button class="arrow right-arrow">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-8 mx-3 right-section">
+          <div class="badges">
+            <h2 class="product-title">Thinai Sakkarai Pongal</h2>
+            <div class="vegetarian-pill flex product-attributes">PURE VEG</div>
+          </div>
+          <div class="badges">
+            <div class="attribute">No Maida</div>
+            <div class="attribute">Best Seller</div>
+            <div class="attribute">No Maida</div>
+            <div class="attribute">Best Seller</div>
+            <div class="attribute">No Maida</div>
+          </div>
+          <div class="price-container">
+            <span class="original-price">Rs. 169</span>
+            <span class="price">Rs. 166</span>
+            <span class="discount">SAVE 2%</span>
+            <span class="weight">(150g)</span>
+          </div>
+          <div class="rating-container">
+            <span class="star-icon">★</span>
+            <span class="rating-number">4.81</span>
+            
+            <span class="review-text">
+              <span class="verified-icon">     |    ✔</span>
+              569 Verified Reviews
+            </span>
+          </div>
+          <div class="quantity-container">
+            <div class="counter-container">
+              <button class="counter-button" id="decrease">-</button>
+              <span class="counter-value" id="counter">0</span>
+              <button class="counter-button" id="increase">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="related-products">
+            <h3>Related Products</h3>
+            <div class="products"> 
+              <div class="products">
+                <div class="product-card">
+                  <img src="img/bnac/p1.jpg" alt="Product 1" />
+                  <p>Ghee Mysore </p>
+                </div>
+                <div class="product-card">
+                  <img src="img/bnac/p2.jpg" alt="Product 2" />
+                  <p>Peanut Chikki</p>
+                </div>
+                <div class="product-card">
+                  <img src="img/bnac/p3.jpg" alt="Product 3" />
+                  <p>Filter Coffee</p>
+                </div>
+                <div class="product-card">
+                  <img src="img/bnac/p1.jpg" alt="Product 1" />
+                  <p>Ghee Mysore </p>
+                </div>
+                <div class="product-card">
+                  <img src="img/bnac/p2.jpg" alt="Product 2" />
+                  <p>Peanut Chikki</p>
+                </div>
+                <!-- <div class="product-card">
+                  <img src="p3.jpg" alt="Product 3" />
+                  <p>Filter Coffee</p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <style>
+        .left-section,
+        .right-section {
+          flex: 1;
+          min-width: 100px;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+         /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);*/
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+  
+        .left-section {
+        flex: 2; /* Larger portion for images */
+        min-width: 300px;
+        }
+  
+        .right-section {
+          flex: 3; /* Larger portion for product details */
+          min-width: 400px;
+        }
+  
+        .product-thumbnails {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+  
+        .product-thumbnails img {
+          width: 60px;
+          height: 60px;
+          border-radius: 5px;
+          cursor: pointer;
+          object-fit: cover;
+          border: 2px solid transparent;
+          transition: border-color 0.3s ease;
+        }
+  
+        .product-thumbnails img:hover {
+          border-color: #007bff;
+        }
+  
+        .main-image-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 500px;
+          width: 500px;
+          /* background: #f3f3f3; */
+          border-radius: 10px;
+          overflow: hidden;
+        }
+  
+        .main-image-container img {
+          width: 100%;
+          max-width: 350px;
+          max-height: 350px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+  
+        .navigation-arrows {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          transform: translateY(-50%);
+          pointer-events: none;
+        }
+  
+        .arrow {
+          pointer-events: all;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: background 0.3s ease;
+          margin: 0 4px; /* Adds space between the arrow and the image */
+        }
+  
+        .arrow:hover {
+          background: rgba(0, 0, 0, 0.8);
+        }
+  
+        @media (max-width: 768px) {
+          .left-section, .right-section {
+            flex: 1; 
+            min-width: unset;
+          }
+        }
+  
+        @media (max-width: 768px) {
+          .main-image-container {
+            height: 250px;
+          }
+  
+          .product-thumbnails img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+    </style>
+
+<section>
+    <br />
+    <br />
+    <div class="detail-container">
+      <!-- Card 1 -->
+
+      <div class="detail-card detail-card-description" style="background-image: url(img/bnac/kit.jpg);">
+        <h2>Product Description</h2>
+        <p>
+          Discover the rich and delectable flavor of Laddu Theri, a unique
+          treat crafted with love.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="detail-card detail-card-ingredients "style="background-image: url(img/bnac/kit2.jpg);">
+        <h2>Ingredients</h2>
+        <p>
+          Made with pure jaggery, roasted gram, and other wholesome
+          ingredients.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="detail-card detail-card-history"style="background-image: url(img/bnac/kit2.jpg);">
+        <h2>History</h2>
+        <p>
+          Rooted in tradition, Laddu Theri has been cherished for generations.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="detail-card detail-card-purity" style="background-image: url(img/bnac/kit.jpg);">
+        <h2>Purity</h2>
+        <p>
+          Our Laddu Theri is made with 100% natural and preservative-free
+          ingredients.
+        </p>
+      </div>
+    </div>
+  </section>    
+
+    <!-- Product Ends -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <!-- <h5 class="text-white mb-4">Our Logo</h5> -->
+                    <img src="img/bnac/logo.png" alt="Company Logo" class="img-fluid" style="max-width: 100%; height: auto;">
+                </div>
+                
+
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <a class="btn btn-link" href="">Home</a>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Products</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Policies</h5>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Refund and Returns</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms of Services</a>
+                    <a class="btn btn-link" href="">Refund Policy</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2/143-5, Thirumalpuram, Veerapandi Road, Oomachikulam, Madurai - 625014.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 97861 00191 / +91 72992 99294</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@bharathsnacks.in</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        const thumbnails = document.querySelectorAll('.product-thumbnails img');
+        const mainImage = document.getElementById('main-image');
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+  
+        let currentIndex = 0;
+  
+        const images = Array.from(thumbnails).map((img) =>
+          img.getAttribute('data-image')
+        );
+  
+        // Update main image based on index
+        function updateMainImage(index) {
+          mainImage.src = images[index];
+          currentIndex = index;
+          thumbnails.forEach((thumb, i) => {
+            thumb.style.borderColor = i === index ? '#007bff' : 'transparent';
+          });
+        }
+  
+        // Thumbnail click event
+        thumbnails.forEach((thumbnail, index) => {
+          thumbnail.addEventListener('click', () => updateMainImage(index));
+        });
+  
+        // Arrow navigation
+        leftArrow.addEventListener('click', () => {
+          const newIndex = (currentIndex - 1 + images.length) % images.length;
+          updateMainImage(newIndex);
+        });
+  
+        rightArrow.addEventListener('click', () => {
+          const newIndex = (currentIndex + 1) % images.length;
+          updateMainImage(newIndex);
+        });
+  
+        // Initial setup
+        updateMainImage(currentIndex);
+
+        const counter = document.getElementById('counter');
+      const increaseButton = document.getElementById('increase');
+      const decreaseButton = document.getElementById('decrease');
+  
+      let count = 0;
+  
+      increaseButton.addEventListener('click', () => {
+        count++;
+        counter.textContent = count;
+      });
+  
+      decreaseButton.addEventListener('click', () => {
+        count--;
+        counter.textContent = count;
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

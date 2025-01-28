@@ -1,0 +1,335 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f6f6f6;
+}
+.container {
+    margin-top: 20px;
+}
+.section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* background-color: #f8f9fa; */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+.form-group label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #555;
+}
+.form-group input.form-control {
+    padding: 20px 15px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input.form-control:focus, .form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 1px rgba(0, 123, 255, 0.5);
+}
+
+.form-group select.form-control {
+    font-size: 13px;
+    /* padding: 15px; */
+    /* padding-top: 20px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-check-label {
+    font-size: 13px;
+    color: #555;
+}
+.form-check-input {
+    margin-top: 0.4rem;
+}
+.payment-option-card {
+    border: 1px solid #c4c3c3;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+}
+.payment-option-card:hover {
+    border-color: #007bff;
+    background-color: #eef6ff;
+}
+.logo-box {
+    border: 1px solid #c4c3c3;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+.payment-option-card label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    flex-grow: 1;
+}
+.credit-card-section {
+    background-color: #eef6ff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+.credit-card-icons {
+    display: flex;
+    gap: 10px;
+}
+.credit-card-icons img {
+    width: 40px;
+    height: auto;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.desc{
+    font-size: 13px;
+    color: #585757;
+    margin-top: .5rem;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.dropdown-toggle {
+    white-space: nowrap;
+    margin-top: -5px;
+    color: black;
+}
+.order-review-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.order-review-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.order-review-section .desc {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.order-item.card {
+    padding: 15px;
+    display: flex;
+}
+.card{
+    border:0;
+}
+.order-item.card:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.item-image {
+    border-radius: 8px;
+    margin-right: 15px;
+}
+.item-details {
+    flex-grow: 1;
+}
+.item-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: .5rem;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.quantity-controls button {
+    font-size: 12px;
+    width: 28px;
+    height: 28px;
+}
+.quantity-controls .quantity {
+    font-size: 13px;
+    font-weight: 400;
+}
+.item-price {
+    text-align: right;
+    margin-top: 1.5rem;
+}
+.item-price .original-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999;
+    display: block;
+}
+.item-price .final-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+button.close {
+    top: 23px;
+    right: 15px;
+}
+.close{
+    font-weight: 400;
+}
+.remove-item {
+    font-size: 25px;
+    /* color: #999; */
+    margin-top: -10px;
+    /* text-decoration: none; */
+    padding: 0;
+}
+.btn-sm {
+    padding: 5px 10px;
+}
+.toggle-btn {
+    border: none;
+    background: none;
+    color: #007bff;
+    font-size: 16px;
+}
+.toggle-btn:hover {
+    color: #0056b3;
+}
+.a:hover{
+    color: black;
+}
+.rotate {
+    transition: transform 0.3s;
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+#billing-summary {
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.billing-details .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.billing-details .label {
+    font-size: 16px;
+    color: #555;
+    flex: 1;
+    text-align: left;
+}
+
+.billing-details .value {
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+    color: #333;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-comment textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.policy-check {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.pay-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pay-button:hover {
+    background-color: #45a049;
+}
+
+.security-checkout {
+    text-align: center;
+    margin-top: 15px;
+}
+.security-checkout img {
+    width: 120px;
+}
+#shipping {
+    display: none;
+}
+
+.row.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 10px;
+    /* border-top: 2px solid #ddd; */
+}
+
+.row.total .label {
+    text-align: left;
+    flex: 1;
+    color: #555;
+}
+
+.row.total .value {
+    text-align: right;
+    flex: 1;
+    color: #333;
+    font-weight: bold; /* Ensures the amount is bold */
+}

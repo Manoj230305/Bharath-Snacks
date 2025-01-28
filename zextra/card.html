@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Milky - Dairy Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><circle cx="12" cy="9" r="3"/><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"/></g></symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-bag" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M3.864 16.455c-.858-3.432-1.287-5.147-.386-6.301C4.378 9 6.148 9 9.685 9h4.63c3.538 0 5.306 0 6.207 1.154c.901 1.153.472 2.87-.386 6.301c-.546 2.183-.818 3.274-1.632 3.91c-.814.635-1.939.635-4.189.635h-4.63c-2.25 0-3.375 0-4.189-.635c-.814-.636-1.087-1.727-1.632-3.91Z"/><path d="m19.5 9.5l-.71-2.605c-.274-1.005-.411-1.507-.692-1.886A2.5 2.5 0 0 0 17 4.172C16.56 4 16.04 4 15 4M4.5 9.5l.71-2.605c.274-1.005.411-1.507.692-1.886A2.5 2.5 0 0 1 7 4.172C7.44 4 7.96 4 9 4"/><path d="M9 4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 13v4m8-4v4m-4-4v4"/></g></symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="wishlist" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M21 16.09v-4.992c0-4.29 0-6.433-1.318-7.766C18.364 2 16.242 2 12 2C7.757 2 5.636 2 4.318 3.332C3 4.665 3 6.81 3 11.098v4.993c0 3.096 0 4.645.734 5.321c.35.323.792.526 1.263.58c.987.113 2.14-.907 4.445-2.946c1.02-.901 1.529-1.352 2.118-1.47c.29-.06.59-.06.88 0c.59.118 1.099.569 2.118 1.47c2.305 2.039 3.458 3.059 4.445 2.945c.47-.053.913-.256 1.263-.579c.734-.676.734-2.224.734-5.321Z"/><path stroke-linecap="round" d="M15 6H9"/></g></symbol>
+
+        </defs>
+    </svg>
+
+    <header>
+        <div class="container-fluid">
+          <div class="row py-3 border-bottom align-items-center">
+            
+            <div class="col-sm-4 col-lg-4 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
+              <div class="d-flex align-items-center my-3 my-sm-0">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                  <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
+                  <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
+              </a>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 offset-sm-2 py-2 offset-md-0 col-lg-3">
+                <div class="search-bar row bg-light p-2 align-items-center" style="border-radius: 20px;">
+                  <!-- Optional Category Dropdown -->
+                  <!-- <div class="col-md-4 d-none d-md-block">
+                    <select class="form-select border-0 bg-transparent">
+                      <option>All Categories</option>
+                      <option>Groceries</option>
+                      <option>Drinks</option>
+                      <option>Chocolates</option> 
+                    </select>
+                  </div> -->
+                  <div class="col-11 col-md-10">
+                    <form id="search-form" class="text-center" action="index.html" method="post">
+                      <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
+                    </form>
+                  </div>
+                  <div class="col-1 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                    </svg>
+                  </div>
+                </div>
+            </div>
+              
+  
+            <div class="col-lg-4 py-1">
+              <ul class="navbar-nav list-unstyled mt-1 d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
+                <li class="nav-item nav-link">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a href="#section_2" class="nav-link">About</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a href="product.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Exports</a>
+                  <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                    <li><a href="index.html" class="dropdown-item">About Us </a></li>
+                    <li><a href="index.html" class="dropdown-item">Shop </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-sm-8 col-lg-1 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
+              <ul class="d-flex justify-content-end list-unstyled m-0">
+                <li>
+                  <a href="#" class="p-2 mx-1">
+                    <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                  </a>
+                </li>
+                <li>
+                    <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                      <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+  
+          </div>
+        </div>
+    </header>
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Our Team</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Our Team</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div class="product-page">
+      <div class="product-container">
+        <div class="product-image-section">
+          <img src="img/bnac/muk.png" alt="Product Image" class="main-image" />
+          <div class="product-thumbnails">
+            <img src="img/bnac/ka.png" alt="Thumbnail 1" />
+            <img src="img/bnac/ka.png" alt="Thumbnail 2" />
+            <img src="img/bnac/ka.png" alt="Thumbnail 3" />
+            <img src="img/bnac/ka.png" alt="Thumbnail 4" />
+          </div>
+        </div>
+        <div class="product-details-section">
+          <h2>Surul Muruku </h2>
+          <div class="product-rating">
+            <span>★★★★★</span>
+            <span>(15 customer review)</span>
+          </div>
+          <h3 class="product-price">Rs.73</h3>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="add-to-cart-section">
+            <input type="number" value="1" min="1" />
+            <button class="add-to-cart-button">Add to cart</button>
+          </div>
+          <div class="product-meta">
+            <p><strong>SKU:</strong> SBMW-001-009-4</p>
+            <p><strong>Category:</strong> Wild Honey</p>
+            <p><strong>Tags:</strong> <span>#honey</span> <span>#sweet</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .product-page {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      gap: 20px;
+    }
+    
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .product-image-section {
+      flex: 1;
+      max-width: 50%;
+    }
+    
+    .product-image-section .main-image {
+      width: 80%;
+      border-radius: 8px;
+    }
+    
+    .product-thumbnails {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .product-thumbnails img {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .product-details-section {
+      flex: 1;
+      max-width: 50%;
+      padding: 10px;
+    }
+    
+    .product-rating {
+      color: #f4b400;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    
+    .product-price {
+      font-size: 24px;
+      color: #333;
+      margin: 10px 0;
+    }
+    
+    .product-description {
+      background-color: #fff7ec;
+      padding: 10px;
+      border-left: 3px solid #ffa500;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+    
+    .add-to-cart-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    
+    .add-to-cart-section input {
+      width: 50px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .add-to-cart-button {
+      padding: 10px 20px;
+      background-color: #ff7e57;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .add-to-cart-button:hover {
+      background-color: #ff5722;
+    }
+    
+    .product-meta p {
+      margin: 5px 0;
+    }
+    
+    .product-meta span {
+      background-color: #f4b400;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 5px;
+      font-size: 12px;
+    }
+    </style>
+    
+   <section class="sec bg-light">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 title_bx">
+               <h3 class="title"> Recent Post   </h3>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12 list-slider mt-4">
+               <div class="owl-carousel common_wd  owl-theme" id="recent_post">
+                  <div class="item">
+                     <div class="sq_box shadow">
+                        <div class="pdis_img"> 
+                           <span class="wishlist">
+                           <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                           </span>
+                           <a href="#">
+                           <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                           </a>
+                        </div>
+                        <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                        <div class="price-box mb-2">
+                           <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                           <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                        </div>
+                        <div class="btn-box text-center">
+                           <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="sq_box shadow">
+                        <div class="pdis_img"> 
+                           <span class="wishlist">
+                           <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                           </span>
+                           <a href="#">
+                           <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                           </a>
+                        </div>
+                        <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                        <div class="price-box mb-2">
+                           <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                           <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                        </div>
+                        <div class="btn-box text-center">
+                           <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="sq_box shadow">
+                        <div class="pdis_img"> 
+                           <span class="wishlist">
+                           <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                           </span>
+                           <a href="#">
+                           <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                           </a>
+                        </div>
+                        <h4 class="mb-1"> <a href="#"> Milton Bottle </a> </h4>
+                        <div class="price-box mb-2">
+                           <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                           <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                        </div>
+                        <div class="btn-box text-center">
+                           <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="sq_box shadow">
+                        <div class="pdis_img"> 
+                           <span class="wishlist">
+                           <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                           </span>
+                           <a href="#">
+                           <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                           </a>
+                        </div>
+                        <h4 class="mb-1"> <a href="#"> Milton Bottle </a> </h4>
+                        <div class="price-box mb-2">
+                           <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                           <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                        </div>
+                        <div class="btn-box text-center">
+                           <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="sq_box shadow">
+                        <div class="pdis_img"> 
+                           <span class="wishlist">
+                           <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                           </span>
+                           <a href="#">
+                           <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                           </a>
+                        </div>
+                        <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                        <div class="price-box mb-2">
+                           <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                           <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                        </div>
+                        <div class="btn-box text-center">
+                           <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="sq_box shadow">
+                        <div class="pdis_img"> 
+                           <span class="wishlist">
+                           <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                           </span>
+                           <a href="#">
+                           <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                           </a>
+                        </div>
+                        <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                        <div class="price-box mb-2">
+                           <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                           <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                        </div>
+                        <div class="btn-box text-center">
+                           <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="sq_box shadow">
+                        <div class="pdis_img"> 
+                           <span class="wishlist">
+                           <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                           </span>
+                           <a href="#">
+                           <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                           </a>
+                        </div>
+                        <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                        <div class="price-box mb-2">
+                           <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                           <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                        </div>
+                        <div class="btn-box text-center">
+                           <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+      
+
+    <section id="jeff-container">
+        <div id="jeff">
+            <div id="row1">
+                <div class="stack">
+                    <div class="imagen" style="background-image: url('img/bnac/muk.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/muruku.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/ka.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/rusk.png');"></div>
+                </div>
+                <div class="stack back">
+                    <div class="imagen" style="background-image: url('img/bnac/ru.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/p-About-Us.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/sevu.jpg');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/all.png');"></div>
+                </div>
+            </div>
+            <div id="row2">
+                <div class="stack reverse">
+                    <div class="imagen" style="background-image: url('img/bnac/muk.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/muruku.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/ka.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/rusk.png');"></div>
+                </div>
+                <div class="stack reverse">
+                    <div class="imagen" style="background-image: url('img/bnac/ru.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/p-About-Us.png');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/sevu.jpg');"></div>
+                    <div class="imagen" style="background-image: url('img/bnac/all.png');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        ;(function($){
+            $.fn.picZoomer = function(options){
+                var opts = $.extend({}, $.fn.picZoomer.defaults, options), 
+                    $this = this,
+                    $picBD = $('<div class="picZoomer-pic-wp"></div>').css({'width':opts.picWidth+'px', 'height':opts.picHeight+'px'}).appendTo($this),
+                    $pic = $this.children('img').addClass('picZoomer-pic').appendTo($picBD),
+                    $cursor = $('<div class="picZoomer-cursor"><i class="f-is picZoomCursor-ico"></i></div>').appendTo($picBD),
+                    cursorSizeHalf = {w:$cursor.width()/2 ,h:$cursor.height()/2},
+                    $zoomWP = $('<div class="picZoomer-zoom-wp"><img src="" alt="" class="picZoomer-zoom-pic"></div>').appendTo($this),
+                    $zoomPic = $zoomWP.find('.picZoomer-zoom-pic'),
+                    picBDOffset = {x:$picBD.offset().left,y:$picBD.offset().top};
+
+                
+                opts.zoomWidth = opts.zoomWidth||opts.picWidth;
+                opts.zoomHeight = opts.zoomHeight||opts.picHeight;
+                var zoomWPSizeHalf = {w:opts.zoomWidth/2 ,h:opts.zoomHeight/2};
+
+                $zoomWP.css({'width':opts.zoomWidth+'px', 'height':opts.zoomHeight+'px'});
+                $zoomWP.css(opts.zoomerPosition || {top: 0, left: opts.picWidth+30+'px'});
+                $zoomPic.css({'width':opts.picWidth*opts.scale+'px', 'height':opts.picHeight*opts.scale+'px'});
+
+                $picBD.on('mouseenter',function(event){
+                    $cursor.show();
+                    $zoomWP.show();
+                    $zoomPic.attr('src',$pic.attr('src'))
+                }).on('mouseleave',function(event){
+                    $cursor.hide();
+                    $zoomWP.hide();
+                }).on('mousemove', function(event){
+                    var x = event.pageX-picBDOffset.x,
+                        y = event.pageY-picBDOffset.y;
+
+                    $cursor.css({'left':x-cursorSizeHalf.w+'px', 'top':y-cursorSizeHalf.h+'px'});
+                    $zoomPic.css({'left':-(x*opts.scale-zoomWPSizeHalf.w)+'px', 'top':-(y*opts.scale-zoomWPSizeHalf.h)+'px'});
+
+                });
+                return $this;
+
+            };
+            $.fn.picZoomer.defaults = {
+                picHeight: 460,
+                scale: 2.5,
+                zoomerPosition: {top: '0', left: '380px'},
+
+                zoomWidth: 400,
+                zoomHeight: 460
+            };
+        })(jQuery); 
+
+
+
+        $(document).ready(function () {
+            $('.picZoomer').picZoomer();
+            $('.piclist li').on('click', function (event) {
+                var $pic = $(this).find('img');
+                $('.picZoomer-pic').attr('src', $pic.attr('src'));
+            });
+        
+        var owl = $('#recent_post');
+                    owl.owlCarousel({
+                        margin:20,
+                        dots:false,
+                        nav: true,
+                        navText: [
+                        "<i class='fa fa-chevron-left'></i>",
+                        "<i class='fa fa-chevron-right'></i>"
+                        ],
+                        autoplay: true,
+                        autoplayHoverPause: true,
+                        responsive: {
+                        0: {
+                            items: 2
+                        },
+                        600: {
+                            items:3
+                        },
+                        1000: {
+                            items:5
+                        },
+                        1200: {
+                            items:4
+                        }
+                        }
+        });    
+        
+        $('.decrease_').click(function () {
+            decreaseValue(this);
+        });
+        $('.increase_').click(function () {
+            increaseValue(this);
+        });
+        function increaseValue(_this) {
+            var value = parseInt($(_this).siblings('input#number').val(), 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            $(_this).siblings('input#number').val(value);
+        }
+
+        function decreaseValue(_this) {
+            var value = parseInt($(_this).siblings('input#number').val(), 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            $(_this).siblings('input#number').val(value);
+        }
+        });
+
+      
+    </script>
+</body>
+
+</html>
