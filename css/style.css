@@ -7,7 +7,7 @@
 }
 
 .form-control{
-    font-size: 0.90rem;
+    font-size: 0.75rem;
 }
 
 .form-control:focus{
@@ -98,8 +98,11 @@
     transition: .5s;
 }
 
-.nav-link, .nav-link:hover, a:hover{
-    color:black;
+.nav-link, .nav-link:hover{
+    color: black;
+}
+
+.header{
     font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
     font-weight: 900;
 }
