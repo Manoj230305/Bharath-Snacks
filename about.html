@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About US</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <!-- <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0">Milky</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="product.html" class="nav-item nav-link">Products</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="border-start ps-4 d-none d-lg-block">
+                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </nav> -->
+    <header class="header">
+        <div class="container-fluid">
+          <div class="row py-3 border-bottom align-items-center">
+            <!-- Logo Section -->
+            <div class="col-sm-4 col-lg-4 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
+              <div class="d-flex align-items-center my-3 my-sm-0">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                  <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
+                  <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
+                </a>
+              </div>
+            </div>
+      
+            <!-- Search Bar Section -->
+            <div class="col-sm-6 offset-sm-2 py-2 offset-md-0 col-lg-3">
+              <div class="search-bar row bg-light p-2 align-items-center" style="border-radius: 20px;">
+                <div class="col-11 col-md-10">
+                  <form id="search-form" class="text-center" action="index.html" method="post">
+                    <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
+                  </form>
+                </div>
+                <div class="col-1 px-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Navigation Links -->
+            <div class="col-lg-4 py-1">
+              <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
+                <li class="nav-item nav-link">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a href="#section_2" class="nav-link">About</a>
+                </li>
+                <li class="nav-item nav-link">
+                  <a href="product.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Exports</a>
+                  <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                    <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                    <li><a href="index.html" class="dropdown-item">Shop</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Icons Section -->
+            <div class="col-sm-8 col-lg-1 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
+              <ul class="d-flex justify-content-end list-unstyled m-0">
+                <li>
+                  <a href="#" class="p-2 mx-1">
+                    <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                    <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><circle cx="12" cy="9" r="3"/><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"/></g></symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-bag" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M3.864 16.455c-.858-3.432-1.287-5.147-.386-6.301C4.378 9 6.148 9 9.685 9h4.63c3.538 0 5.306 0 6.207 1.154c.901 1.153.472 2.87-.386 6.301c-.546 2.183-.818 3.274-1.632 3.91c-.814.635-1.939.635-4.189.635h-4.63c-2.25 0-3.375 0-4.189-.635c-.814-.636-1.087-1.727-1.632-3.91Z"/><path d="m19.5 9.5l-.71-2.605c-.274-1.005-.411-1.507-.692-1.886A2.5 2.5 0 0 0 17 4.172C16.56 4 16.04 4 15 4M4.5 9.5l.71-2.605c.274-1.005.411-1.507.692-1.886A2.5 2.5 0 0 1 7 4.172C7.44 4 7.96 4 9 4"/><path d="M9 4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 1 1-1-1Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 13v4m8-4v4m-4-4v4"/></g></symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="wishlist" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M21 16.09v-4.992c0-4.29 0-6.433-1.318-7.766C18.364 2 16.242 2 12 2C7.757 2 5.636 2 4.318 3.332C3 4.665 3 6.81 3 11.098v4.993c0 3.096 0 4.645.734 5.321c.35.323.792.526 1.263.58c.987.113 2.14-.907 4.445-2.946c1.02-.901 1.529-1.352 2.118-1.47c.29-.06.59-.06.88 0c.59.118 1.099.569 2.118 1.47c2.305 2.039 3.458 3.059 4.445 2.945c.47-.053.913-.256 1.263-.579c.734-.676.734-2.224.734-5.321Z"/><path stroke-linecap="round" d="M15 6H9"/></g></symbol>
+        </defs>
+    </svg>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="section_2">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0" style="color: goldenrod;">50</h1>
+                                <small class="fs-5 fw-bold">Years, since 1974</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/bnac/bag.png">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/bnac/sevu.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/bnac/shop.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="mb-4">Delicious, Nutritious, Authentic taste of the South.</h1>
+                    <p class="mb-4">Bharath Snacks is an accomplished Manufacturer, Exporter and Supplier of ready to eat Indian Sweets and Savories. It was founded in the year 1974. With over four decades of experience in business, we strive to continuously raise our benchmark by providing products of the highest quality and taste.</p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/award.png" alt="">
+                            <h5 class="mb-3">Quality matters!</h5>
+                            <span>Excellence in every detail.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/bnac/del.png" alt="">
+                            <h5 class="mb-3">Delivery On-Time</h5>
+                            <span>Swift and on-schedule every time.</span>
+                        </div>
+                    </div>
+                    
+                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/w1.png">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-white mb-4 wow fadeIn" data-wow-delay="0.3s" style="font-size: 3rem; font-weight: bold;">
+                        "Delivering Delicious Snacks & Sweets to Every Corner of the World!"
+                    </h1>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="">
+                        Explore Our Range
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Banner End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
+                <!-- <h1 class="mb-5">Experienced Team Members</h1> -->
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/found.png" alt="">
+                        <h5>N Ganesan</h5>
+                        <p class="text-primary">Founder, Head of Production</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/cofound.png" alt="">
+                        <h5>N Palanivel</h5>
+                        <p class="text-primary">Co-Founder, Head of Marketing</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/head.png" alt="">
+                        <h5>R Gunasekaran</h5>
+                        <p class="text-primary">Head of Engineering</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="img/bnac/HOD.png" alt="">
+                        <h5>S Gopinath</h5>
+                        <p class="text-primary">Head of Digital</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!--Testimonals-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
+                <h1 class="mb-5">What People Say About Our Sweet Shop</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-img">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-1.jpg" alt="">
+                            <p class="fs-5">Ordered online and got it delivered fast. Neat packing. Fresh and latest stock was sent. Very happy. Have been getting their chikkis for over a decade. But first time tried online and very pleased. Thank you</p>
+                            <h5>Dhivya Srikanth</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-2.jpg" alt="">
+                            <p class="fs-5">Very pleased with the service!! The snacks I ordered online were fresh, crispy and delicious.</p>
+                            <h5>Andrea Alexander</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-3.jpg" alt="">
+                            <p class="fs-5">I am from Bangalore, tried your savouries. They were super fresh, crispy and tasty. Thanks.</p>
+                            <h5>Hariharan C</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-4.jpg" alt="">
+                            <p class="fs-5">Excellent products and very very cheap too.. no compromise on taste at all.. well done Bharath snacks!!</p>
+                            <h5>Niloufer Dsouza</h5>
+                            <span class="text-primary">Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Testimonals End-->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <!-- <h5 class="text-white mb-4">Our Logo</h5> -->
+                    <img src="img/bnac/logo.png" alt="Company Logo" class="img-fluid" style="max-width: 100%; height: auto;">
+                </div>
+                
+
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <a class="btn btn-link" href="">Home</a>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Products</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Policies</h5>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Refund and Returns</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms of Services</a>
+                    <a class="btn btn-link" href="">Refund Policy</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2/143-5, Thirumalpuram, Veerapandi Road, Oomachikulam, Madurai - 625014.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 97861 00191 / +91 72992 99294</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@bharathsnacks.in</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">BHARATH SNACKS</a>, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
