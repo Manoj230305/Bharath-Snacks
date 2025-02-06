@@ -28,6 +28,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
 
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -161,22 +163,24 @@
             </div>
       
             <!-- Icons Section -->
-            <div class="col-sm-8 col-lg-1 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
+            <div class="col-sm-8 col-lg-1 mt-4 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
               <ul class="d-flex justify-content-end list-unstyled m-0">
-                <li>
-                  <a href="#" class="p-2 mx-1">
+                <li class="position-relative">
+                  <a href="#" class="">
                     <svg width="24" height="24"><use xlink:href="#user"></use></svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
-                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
-                  </a>
+                <li class="position-relative">
+                    <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasWishlist">
+                        <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                        <span class="count-popout" id="wishlist-counter">1</span>
+                    </a>
                 </li>
-                <li>
-                  <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
-                    <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
-                  </a>
+                <li class="position-relative">
+                    <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                        <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                        <span class="count-popout" id="wishlist-counter">1</span>
+                    </a>
                 </li>
               </ul>
             </div>
@@ -200,7 +204,7 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div class="cart-item d-flex justify-content-between align-items-center">
+            <div class="cart-item p-3 d-flex justify-content-between align-items-center position-relative">
                 <div class="d-flex align-items-center">
                     <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
                     <div>
@@ -209,11 +213,14 @@
                         <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
                     </div>
                 </div>
-                <div class="d-flex align-items-center">
+                <!-- <button type="button" class="btn-close btn-custom-close" aria-label="Close" onclick="removeCartItem(this)"></button> -->
+                <div class="d-flex mt-4 align-items-center">
+                    <button type="button" class="btn-close btn-custom-close" aria-label="Close" onclick="removeCartItem(this)"></button>
+
                     <button class="btn btn-sm btn-outline-primary me-2" onclick="updateQuantity(-1)">-</button>
                     <span id="quantity">1</span>
                     <button class="btn btn-sm btn-outline-primary ms-2" onclick="updateQuantity(1)">+</button>
-                  </div>
+                </div>
             </div>
             <hr>
             <h6 class="text-muted">You may also like</h6>
@@ -497,8 +504,8 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/ka.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" ><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
                                     <div class="text-center p-4">
@@ -514,7 +521,7 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/muk.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                             <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
@@ -530,7 +537,7 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/ru.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                             <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
@@ -546,7 +553,7 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/oorud.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                             <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
@@ -568,7 +575,7 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/ru.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                             <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
@@ -584,7 +591,7 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/oorud.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                             <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
@@ -600,7 +607,7 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/ka.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                             <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
@@ -616,7 +623,7 @@
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/all.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                             <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
@@ -820,7 +827,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/ka.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>
@@ -837,7 +844,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/muk.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>
@@ -853,7 +860,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/ru.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>
@@ -869,7 +876,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/oorud.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>
@@ -891,7 +898,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/ru.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>
@@ -907,7 +914,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/oorud.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>
@@ -923,7 +930,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/ka.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>
@@ -939,7 +946,7 @@
                                 <div class="position-relative">
                                     <img class="img-fluid" src="img/bnac/all.png" alt="">
                                     <div class="product-overlay">
-                                        <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                        <a class="btn btn-square btn-secondary rounded-circle m-1" onclick="wishIncrementCounter()"><i class="bi bi-heart"></i></a>
                                         <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
                                     </div>
                                 </div>

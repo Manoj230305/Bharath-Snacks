@@ -64,3 +64,22 @@
     
 })(jQuery);
 
+function adjustPadding() {
+    var header = document.querySelector('.header');
+    var headerHeight = header.offsetHeight;
+    document.body.style.paddingTop = headerHeight + 'px';
+}
+
+document.addEventListener("DOMContentLoaded", adjustPadding);
+window.addEventListener("resize", adjustPadding);
+
+function removeCartItem(button) {
+    var cartItem = button.closest('.cart-item');
+    cartItem.remove();
+}
+
+function wishIncrementCounter() {
+    var counterElement = document.getElementById('wishlist-counter');
+    var currentCount = parseInt(counterElement.textContent);
+    counterElement.textContent = currentCount + 1;
+}
