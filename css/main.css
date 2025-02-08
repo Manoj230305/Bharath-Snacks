@@ -92,12 +92,12 @@ body {
 .product1 .price {
   font-size: 16px;
   font-weight: bold;
-  color: #ff5722;
+  color: #000000;
 }
 
 /* Size Buttons */
 .product1 .sizes button {
-  background: #ff5722;
+  background: hsl(217, 10%, 30%);
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -108,7 +108,7 @@ body {
 }
 
 .product1 .sizes button:hover {
-  background: #e64a19;
+  background: #262939;
 }
 
 /* Shelf Life Info */
@@ -120,7 +120,7 @@ body {
 
 /* Check Availability Button */
 .product1 .check-availability {
-  background: #007bff;
+  background: #02013c;
   color: #fff;
   border: none;
   padding: 10px;
@@ -132,7 +132,7 @@ body {
 }
 
 .product1 .check-availability:hover {
-  background: #0056b3;
+  background: #21214b;
 }
 
 
