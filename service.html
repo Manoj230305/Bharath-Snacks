@@ -32,6 +32,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
 </head>
 
 <body>
@@ -103,46 +104,38 @@
             </div>
         </div>
     </nav> -->
-    <header>
+    <header class="header">
         <div class="container-fluid">
-          <div class="row py-3 border-bottom align-items-center">
-            
+          <div class="row py-1 border-bottom align-items-center">
+            <!-- Logo Section -->
             <div class="col-sm-4 col-lg-4 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
               <div class="d-flex align-items-center my-3 my-sm-0">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
                   <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
                   <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
-              </a>
+                </a>
               </div>
             </div>
-            
+      
+            <!-- Search Bar Section -->
             <div class="col-sm-6 offset-sm-2 py-2 offset-md-0 col-lg-3">
-                <div class="search-bar row bg-light p-2 align-items-center" style="border-radius: 20px;">
-                  <!-- Optional Category Dropdown -->
-                  <!-- <div class="col-md-4 d-none d-md-block">
-                    <select class="form-select border-0 bg-transparent">
-                      <option>All Categories</option>
-                      <option>Groceries</option>
-                      <option>Drinks</option>
-                      <option>Chocolates</option> 
-                    </select>
-                  </div> -->
-                  <div class="col-11 col-md-10">
-                    <form id="search-form" class="text-center" action="index.html" method="post">
-                      <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
-                    </form>
-                  </div>
-                  <div class="col-1 px-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                      <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-                    </svg>
-                  </div>
+              <div class="search-bar row bg-light p-2 align-items-center" style="border-radius: 20px;">
+                <div class="col-11 col-md-10">
+                  <form id="search-form" class="text-center" action="index.html" method="post">
+                    <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
+                  </form>
                 </div>
+                <div class="col-1 px-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                  </svg>
+                </div>
+              </div>
             </div>
-              
-  
+      
+            <!-- Navigation Links -->
             <div class="col-lg-4 py-1">
-              <ul class="navbar-nav list-unstyled mt-1 d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
+              <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
                 <li class="nav-item nav-link">
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
@@ -152,39 +145,142 @@
                 <li class="nav-item nav-link">
                   <a href="product.html" class="nav-link">Products</a>
                 </li>
+                
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Exports</a>
+                  <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
                   <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                    <li><a href="index.html" class="dropdown-item">About Us </a></li>
-                    <li><a href="index.html" class="dropdown-item">Shop </a></li>
+                    <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                    <li><a href="index.html" class="dropdown-item">Shop</a></li>
                   </ul>
                 </li>
               </ul>
             </div>
-            
-            <div class="col-sm-8 col-lg-1 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
+      
+            <!-- Icons Section -->
+            <div class="col-sm-8 col-lg-1 mt-4 px-4 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
               <ul class="d-flex justify-content-end list-unstyled m-0">
-                <li>
-                  <a href="#" class="p-2 mx-1">
+                <li class="position-relative">
+                  <a href="#" class="">
                     <svg width="24" height="24"><use xlink:href="#user"></use></svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
-                  </a>
-                </li>
-                <li>
-                    <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                      <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                <li class="position-relative">
+                    <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasWishlist">
+                        <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                        <span class="count-popout" id="wishlist-counter">1</span>
                     </a>
-                  </li>
+                </li>
+                <li class="position-relative">
+                    <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                        <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                        <span class="count-popout" id="wishlist-counter">1</span>
+                    </a>
+                </li>
               </ul>
             </div>
-  
           </div>
         </div>
     </header>
+
+    <!-- Shopping cart offcanvas -->
+    <div class="offcanvas offcanvas-end" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel">
+        <div class="offcanvas-header">
+            <h5 id="shoppingCartLabel" class="offcanvas-title">Shopping Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart-item p-3 d-flex justify-content-between align-items-center position-relative">
+                <div class="d-flex align-items-center">
+                    <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                    <div>
+                        <h6 class="m-0">Murukku</h6>
+                        <small class="text-muted">100 g</small>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                    </div>
+                </div>
+                <!-- <button type="button" class="btn-close btn-custom-close" aria-label="Close" onclick="removeCartItem(this)"></button> -->
+                <div class="d-flex mt-4 align-items-center">
+                    <button type="button" class="btn-close btn-custom-close" aria-label="Close" onclick="removeCartItem(this)"></button>
+
+                    <button class="btn btn-sm btn-outline-primary me-2" onclick="updateQuantity(-1)">-</button>
+                    <span id="quantity">1</span>
+                    <button class="btn btn-sm btn-outline-primary ms-2" onclick="updateQuantity(1)">+</button>
+                </div>
+            </div>
+            <hr>
+            <h6 class="text-muted">You may also like</h6>
+            <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <!-- Item 1 -->
+                  <div class="carousel-item active">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img src="img/bnac/sev.png" alt="Suggestion 1" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                        <div>
+                          <h6 class="m-0">Sakkarai Pongal Mix</h6>
+                          <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px; left: -10px;">
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  
+              
+                  <!-- Item 2 -->
+                  <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                      <img src="img/bnac/all.png" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                      <div>
+                        <h6 class="m-0">Rava Laddu Mix</h6>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                      <img src="img/bnac/ka.png" alt="Suggestion 3" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                      <div>
+                        <a<h6 class="m-0">Chikkis</h6>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                      <img src="img/bnac/oorud.png" alt="Suggestion 4" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                      <div>
+                        <h6 class="m-0">Kadala Orundai</h6>
+                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Add more items as needed -->
+                </div>
+                  
+              </div>              
+            <hr>
+            <div class="d-flex justify-content-between">
+                <h6 class="m-0">Subtotal</h6>
+                <h6 class="m-0">Rs. 149.00</h6>
+            </div>
+            <div class="mt-3">
+                <button class="btn-primary w-100 d-flex align-items-center justify-content-center">
+                  <a href="service.html"><i class="btn-icon me-2">🛒</i> Checkout</a>
+                </button>
+                <button class="btn-outline-primary w-100 mt-2 d-flex align-items-center justify-content-center">
+                  <a href="product.html"><i class="btn-icon me-2">🔄</i> Update Cart</a>
+                </button>
+            </div>
+              
+              
+        </div>
+    </div>
     
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -215,8 +311,8 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
+    <div class="container-xxl py-4">
+        <div class="container my-3">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Checkout</p>
                 <!-- <h1 class="mb-5">Services That We Offer For Entrepreneurs</h1> -->
@@ -423,23 +519,23 @@
                     <h2>Payment Method</h2>
                     <div class="payment-option-card">
                         <div class="d-flex align-items-center">
-                            <input type="radio" name="payment" value="razorpay" id="razorpay-radio" class="mr-2">
-                            <label for="razorpay-radio" class="mb-0">RazorPay Secure (UPI, Cards, Wallets, NetBanking)</label>
+                            <input type="radio" name="payment" value="pmethod-1" id="pmethod-1-radio" class="mr-2">
+                            <label for="pmethod-1-radio" class="mb-0">Online Payment (UPI, Cards, Wallets, NetBanking)</label>
                             <div class="logo-box">
-                                <img src="img/razorpay.png" alt="Razorpay Logo" width="25">
+                                <img src="img/razorpay.png" alt="pmethod-1 Logo" width="25">
                             </div>
                         </div>
-                        <p class="desc">You will be redirected to the RazorPay (UPI, Cards, Wallets, NetBanking) <br> website after submitting your order</p>
+                        <p class="desc">Online payment involves transferring money electronically through payment gateways<br> such as credit/debit cards, e-wallets, or bank transfers, for online purchases.</p>
                     </div>
                     <div class="payment-option-card">
                         <div class="d-flex align-items-center">
-                            <input type="radio" name="payment" value="phonepe" id="phonepe-radio" class="mr-2">
-                            <label for="phonepe-radio" class="mb-0">PhonePe Payment Gateway (UPI, Cards & NetBanking)</label>
+                            <input type="radio" name="payment" value="pmethod-2" id="pmethod-2-radio" class="mr-2">
+                            <label for="pmethod-2-radio" class="mb-0">Cash on Delivery (Pay When You Receive Your Order)</label>
                             <div class="logo-box">
-                                <img src="img/phonepe.png" alt="Phonepe Logo" width="25">
+                                <img src="img/phonepe.png" alt="pmethod-2 Logo" width="25">
                             </div>
                         </div>
-                        <p class="desc">You will be redirected to the PhonePe Payment Gateway (UPI, Cards & NetBanking) <br> website after submitting your order</p>
+                        <p class="desc">Cash on Delivery (COD) lets customers pay in cash when their order arrives<br>offering a secure and convenient way to complete transactions without paying upfront.</p>
                     </div>
                     <!-- <div class="credit-card-section">
                         <h3>Enter Credit Card Details</h3>
@@ -469,7 +565,7 @@
                 <div id="order-review" class="section">
                     <div class="d-flex align-items-center justify-content-between">
                         <h2 class="mb-0">Order Review</h2>
-                        <a class="dropdown-toggle collapsed rotate-180" type="button" data-toggle="collapse" data-target="#orderReviewCard" aria-expanded="false" aria-controls="orderReviewCard" onclick="toggleRotate(this)">
+                        <a class="dropdown-toggle collapsed" type="button" data-toggle="collapse" data-target="#orderReviewCard" aria-expanded="false" aria-controls="orderReviewCard" onclick="toggleRotate(this)">
                         </a>
                     </div>
                     <p class="desc text-dark mb-0">2 items in cart</p>
@@ -481,22 +577,21 @@
                                 <div class="item-details">
                                     <p class="item-name">Nice Chikki</p>
                                     <div class="quantity-controls">
-                                        <a class="btn btn-sm btn-light mr-2" onclick="decreaseQuantity(this)">-</a>
+                                        <a class="btn btn-sm btn-light mr-2" onclick="decreaseQuantity(this)">−</a>
                                         <span class="quantity">1</span>
                                         <a class="btn btn-sm btn-light ml-2" onclick="increaseQuantity(this)">+</a>
                                     </div>
                                 </div>
                                 <div class="item-price">
-                                    <span class="original-price">Rs.30</span>
-                                    <span class="final-price">Rs.25</span>
+                                    <span class="original-price">Rs 30.78</span>
+                                    <span class="final-price">Rs 25.78</span>
                                 </div>
                                 <button type="button" class="close remove-item position-absolute" aria-label="Close" onclick="removeOrderItem(this)">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                         </div>
-                        <br>
-                        <!-- <hr id='line' class="mt-0 mb-0"> -->
+                        <hr class="my-2">
                         <div class="order-item card">
                             <div class="d-flex">
                                 <img src="img/muruku.jpg" alt="Item" width="66" class="item-image">
@@ -509,19 +604,19 @@
                                     </div>
                                 </div>
                                 <div class="item-price">
-                                    <span class="original-price">Rs.15</span>
-                                    <span class="final-price">Rs.10</span>
+                                    <span class="original-price">Rs 15.78</span>
+                                    <span class="final-price">Rs 10.78</span>
                                 </div>
                                 <button type="button" class="close remove-item position-absolute" aria-label="Close" onclick="removeOrderItem(this)">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                         </div>
-                        <!-- <hr id='line' class="mt-0 mb-0"> -->
+                        <hr class="my-2">
                     </div>
                 </div>
 
-                <div id="discount-codes" class="section">
+                <!-- <div id="discount-codes" class="section">
                     <div class="d-flex align-items-center justify-content-between">
                         <h2 class="mb-0">Discount Codes</h2>
                         <a class="dropdown-toggle collapsed rotate-180" type="button" data-toggle="collapse" data-target="#discountInputField" aria-expanded="false" aria-controls="discountInputField" onclick="toggleRotate(this)">
@@ -534,9 +629,9 @@
                             <input type="text" class="form-control" id="discount" placeholder="">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div id="billing-summary" class="section">
+                <!-- <div id="billing-summary" class="section">
                     <h2>Billing Summary</h2>
                     <div class="billing-details">
                         <div class="row">
@@ -547,12 +642,6 @@
                             <span class="label">Discount</span>
                             <span class="value">-Rs.79</span>
                         </div>
-                        <!-- <div class="row">
-                            <span class="label">Warranty (Platinum)</span>
-                            <span class="value">
-                                $259.99 <a href="#" class="remove-link">Remove</a>
-                            </span>
-                        </div> -->
                         <div class="row">
                             <span class="label">Shipping</span>
                             <span class="value">Rs.30</span>
@@ -562,7 +651,7 @@
                             <span class="value">Rs.28</span>
                         </div>
                     </div>
-                    <!-- <hr> -->
+                    <hr>
                     <div class="row total">
                         <span class="label">Grand Total</span>
                         <span class="value">Rs.439.00</span>
@@ -578,6 +667,49 @@
                         </label>
                     </div>
                     <button class="pay-button">Pay Rs.439.00</button>
+                </div>   -->
+                <div id="billing-summary" class="section">
+                    <h2>Billing Summary</h2>
+                    <div class="billing-details">
+                        <div class="row">
+                            <span class="label">Subtotal</span>
+                            <span class="value">Rs 3720.27</span>
+                        </div>
+                        <div class="row">
+                            <span class="label">Discount</span>
+                            <span class="value">-   Rs 749.99</span>
+                        </div>
+                        <!-- <div class="row">
+                            <span class="label">Warranty (Platinum)</span>
+                            <span class="value">
+                                Rs 259.99 <a href="#" class="remove-link">Remove</a>
+                            </span>
+                        </div> -->
+                        <div class="row">
+                            <span class="label">Shipping</span>
+                            <span class="value">Rs 0.00</span>
+                        </div>
+                        <div class="row">
+                            <span class="label">Tax</span>
+                            <span class="value">Rs 228.72</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row total">
+                        <span class="label">Grand Total</span>
+                        <span class="value">Rs 3,439.00</span>
+                    </div>
+                    <div class="order-comment">
+                        <label for="orderComment">Order Comment</label>
+                        <textarea id="orderComment" placeholder="Type here..."></textarea>
+                    </div>
+                    <div class="policy-check">
+                        <input type="checkbox" id="policyCheck">
+                        <label for="policyCheck">
+                            Please check to acknowledge our <a href="#">Privacy & Terms Policy</a>
+                        </label>
+                    </div>
+                    <button class="pay-button">Pay Rs 3,439.00</button>
                     <!-- <div class="security-checkout">
                         <img src="img/norton-security.png" alt="Norton Security Checkout">
                     </div> -->
@@ -590,7 +722,7 @@
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
+        <div class="container py-3">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6 text-center">
                     <!-- <h5 class="text-white mb-4">Our Logo</h5> -->
