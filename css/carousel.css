@@ -8,7 +8,7 @@
   }
   
   /* ----- Global ----- */
-  * {
+  /* * {
     box-sizing: border-box;
   }
   
@@ -20,7 +20,7 @@
   body {
     display: grid;
     grid-template-rows: 1fr;
-    font-family: Arial, sans-serif; /* Replace "Raleway" if not imported */
+    font-family: Arial, sans-serif; 
     background-color: #ffffff;
   }
   
@@ -28,7 +28,7 @@
     font-size: 0.7em;
     letter-spacing: 1.2px;
     color: var(--color-secondary);
-  }
+  } */
   
   /* img {
     max-width: 100%;

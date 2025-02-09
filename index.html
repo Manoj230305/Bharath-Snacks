@@ -194,106 +194,94 @@
       
 
     <!-- Shopping Cart Offcanvas -->
-    <div class="offcanvas offcanvas-end" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel">
+    <div class="offcanvas offcanvas-end d-flex flex-column" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel">
         <div class="offcanvas-header">
             <h5 id="shoppingCartLabel" class="offcanvas-title">Shopping Cart</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div class="cart-item d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                    <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                    <div>
-                        <h6 class="m-0">Murukku</h6>
-                        <small class="text-muted">100 g</small>
-                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center">
-                    <button class="btn btn-sm btn-outline-primary me-2" onclick="updateQuantity(-1)">-</button>
-                    <span id="quantity">1</span>
-                    <button class="btn btn-sm btn-outline-primary ms-2" onclick="updateQuantity(1)">+</button>
-                  </div>
-            </div>
-            <hr>
-            <h6 class="text-muted">You may also like</h6>
-            <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                  <!-- Item 1 -->
-                  <div class="carousel-item active">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="d-flex align-items-center">
-                        <img src="img/bnac/sev.png" alt="Suggestion 1" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div>
+                <div class="cart-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
                         <div>
-                          <h6 class="m-0">Sakkarai Pongal Mix</h6>
-                          <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
+                            <h6 class="m-0">Murukku</h6>
+                            <small class="text-muted">100 g</small>
+                            <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
                         </div>
-                      </div>
-                      <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px; left: -10px;">
-                        +
-                      </button>
                     </div>
-                  </div>
-                  
-              
-                  <!-- Item 2 -->
-                  <div class="carousel-item">
                     <div class="d-flex align-items-center">
-                      <img src="img/bnac/all.png" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                      <div>
-                        <h6 class="m-0">Rava Laddu Mix</h6>
-                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
-                      </div>
+                        <button class="btn btn-sm btn-outline-primary me-2" onclick="updateQuantity(-1)">-</button>
+                        <span id="quantity">1</span>
+                        <button class="btn btn-sm btn-outline-primary ms-2" onclick="updateQuantity(1)">+</button>
                     </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-flex align-items-center">
-                      <img src="img/bnac/ka.png" alt="Suggestion 3" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                      <div>
-                        <a<h6 class="m-0">Chikkis</h6>
-                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-flex align-items-center">
-                      <img src="img/bnac/oorud.png" alt="Suggestion 4" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                      <div>
-                        <h6 class="m-0">Kadala Orundai</h6>
-                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Add more items as needed -->
                 </div>
-                  
-              </div>              
-            <hr>
-            <div class="d-flex justify-content-between">
-                <h6 class="m-0">Subtotal</h6>
-                <h6 class="m-0">Rs. 149.00</h6>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <h6 class="m-0">Subtotal</h6>
+                    <h6 class="m-0">Rs. 149.00</h6>
+                </div>
+                <div class="mt-3">
+                    <button class="btn-primary w-100 d-flex align-items-center justify-content-center">
+                        <a href="service.html"><i class="btn-icon me-2">🛒</i> Checkout</a>
+                    </button>
+                </div>
             </div>
-            <div class="mt-3">
-                <button class="btn-primary w-100 d-flex align-items-center justify-content-center">
-                  <a href="service.html"><i class="btn-icon me-2">🛒</i> Checkout</a>
-                </button>
-                <button class="btn-outline-primary w-100 mt-2 d-flex align-items-center justify-content-center">
-                  <a href="product.html"><i class="btn-icon me-2">🔄</i> Update Cart</a>
-                </button>
+            <div>
+                <hr>
+                <h6 class="text-muted">You may also like</h6>
+                <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <!-- Item 1 -->
+                        <div class="carousel-item active">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/bnac/sev.png" alt="Suggestion 1" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="m-0">Sakkarai Pongal Mix</h6>
+                                        <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px; left: -10px;">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional carousel items -->
+                    </div>
+                </div>
             </div>
-              
-              
         </div>
     </div>
+    
 
     
     <!-- Navbar End -->
 
+    <!--NOTIFICATION TOAST-->
 
+    <div class="notification-toast" data-toast>
+        <button class="toast-close-btn" data-toast-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="toast-banner">
+          <img id="toast-image" src="img/bnac/box.jpg" alt="Gift Box">
+        </div>
+        <div class="toast-detail">
+          <p id="toast-message" class="toast-message">All in one box</p>
+          <p id="toast-title" class="toast-title">Gift Boxes</p>
+          <!-- <p class="toast-meta">
+            <time id="toast-time" datetime="PT2M">2 Minutes</time> ago
+          </p> -->
+          <button class="add-to-cart-btn">
+            <a id="toast-link" href="product details.html" style="color: white;">Add to Cart</a>
+          </button>
+        </div>
+    </div>
+      
+  
     <!-- Carousel Start -->
     <div class="container-fluid px-0 mb-5">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -343,11 +331,13 @@
     
     <!-- Carousel End -->
 
+    
+
 
     <!-- About Start -->
     <div class="container-xxl py-5" id="section_2">
         <div class="container">
-            <div class="row g-5 align-items-start">
+            <div class="row g-5 align-items-end">
                 <div class="col-lg-6">
                     <div class="row g-2">
                         <div class="col-6 position-relative wow fadeIn " data-wow-delay="0.7s">
@@ -367,13 +357,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn py-2" data-wow-delay="0.5s">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
                     <h1 class="my-4">Delicious, Nutritious, Authentic taste of the South.</h1>
                     <p class="mb-4">Bharath Snacks is an accomplished Manufacturer, Exporter and Supplier of ready to eat Indian Sweets and Savories. It was founded in the year 1974. With over four decades of experience in business, we strive to continuously raise our benchmark by providing products of the highest quality and taste.</p>
                     <a class="btn btn-secondary rounded-pill py-3 px-5 my-3" href="about.html">Explore More</a>
                 </div>
                 <div class="wow fadeIn" data-wow-delay="0.5s">
+                    <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
+                        <h1 class="mb-0">Services That We Offer For Our Customers</h1>
+                    </div>
                     <div class="row g-5 pt-4">
                         <div class="col-sm-3">
                             <img class="img-fluid mb-4" src="img/award.png" alt="">
@@ -423,21 +417,21 @@
         <div class="container">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
-                <!-- <h1 class="mb-5">Services That We Offer For Entrepreneurs</h1> -->
+                <h1 class="mb-3"></h1>
             </div>
             
             <div class="row gy-5 gx-4">
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/bnac/all.png" alt="">
+                            <img class="img-fluid" src="img/bnac/nab.jpg" alt="">
                         </div>
                         <div class="service-text p-5 pt-0">
                             <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/bnac/all.png" alt="">
+                                <img class="img-fluid rounded-circle" src="img/bnac/ladu.jpg" alt="">
                             </div>
-                            <h5 class="mb-3" style="color: white;">Gift Boxes</h4>
-                            <p class="mb-4" style="color: white;">Wrap your love in our beautiful gift boxes.</p>
+                            <h5 class="mb-3" style="color: white;">Sweets</h4>
+                            <p class="mb-4" style="color: white;">Wrap your love with our sweets.</p>
                             <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
@@ -483,7 +477,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <p class="section-title bg-white text-center text-primary px-3">Bestsellers</p>
+                    <p class="section-title bg-white text-center text-primary px-3">Special Products</p>
                 </div>
                 <a href="product.html" class="btn btn-primary">View All</a>
             </div>
@@ -1025,6 +1019,7 @@
     </div> -->
     <!-- Team End -->
 
+
     <!-- Features Start
     <div class="container-xxl py-5">
         <div class="container">
@@ -1074,8 +1069,172 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  FIT JEYANTHI BANNER HERE!!!
     Features End -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">This Week Special</p>
+                </div>
+                <a href="product.html" class="btn btn-primary">View All</a>
+            </div>
+            <div id="bestsellersCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row gx-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item animated-card">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ka.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Chikkis</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/muk.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Murukku</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ru.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Wheat Rusk</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/oorud.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Kadala Orrundai</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row gx-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ru.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Wheat Rusk</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/oorud.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Kadala Orrundai</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/ka.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Chikkis</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-item">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/bnac/all.png" alt="">
+                                        <div class="product-overlay">
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center p-4">
+                                        <a class="d-block h5" href="product details.html">Kadala Orrundai</a>
+                                        <span class="text-primary me-1">Rs.19.00</span>
+                                        <span class="text-decoration-line-through">Rs.29.00</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev custom-control-prev" type="button" data-bs-target="#bestsellersCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next custom-control-next" type="button" data-bs-target="#bestsellersCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Testimonial Start -->
@@ -1222,6 +1381,54 @@
           quantityElement.innerText = newQuantity;
         }
       }
+    </script>
+
+    <script>
+        // Products data for dynamic updates
+        const products = [
+          {
+            image: "img/bnac/muk.jpg",
+            message: "Crunchy Treats",
+            title: "Snack Box",
+            link: "product details.html"
+          },
+          {
+            image: "img/bnac/ka.png",
+            message: "Refreshing Drinks",
+            title: "Drink Set",
+            link: "product details.html"
+          },
+          {
+            image: "img/bnac/box.jpg",
+            message: "All in one box",
+            title: "Gift Boxes",
+            link: "product details.html"
+          },
+        ];
+        
+        // Function to update toast content dynamically
+        let currentIndex = 0;
+        
+        function updateToast() {
+          const toastImage = document.getElementById("toast-image");
+          const toastMessage = document.getElementById("toast-message");
+          const toastTitle = document.getElementById("toast-title");
+        //   const toastTime = document.getElementById("toast-time");
+          const toastLink = document.getElementById("toast-link");
+        
+          // Update content
+          toastImage.src = products[currentIndex].image;
+          toastMessage.textContent = products[currentIndex].message;
+          toastTitle.textContent = products[currentIndex].title;
+        //   toastTime.textContent = products[currentIndex].time;
+          toastLink.href = products[currentIndex].link;
+        
+          // Update index for next cycle
+          currentIndex = (currentIndex + 1) % products.length;
+        }
+        
+        // Set interval for dynamic updates
+        setInterval(updateToast, 10000); // Updates every 10 seconds
     </script>
 
 </body>

@@ -418,7 +418,122 @@
     box-shadow: 0 0 45px rgba(0, 0, 0, .2);
 }
 
-
+/**
+* NOTIFICATION TOAST 
+*/
+.notification-toast {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+    max-width: 320px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee); /* Gradient background */
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 10;
+    animation: slideInOut 10s ease-in-out infinite;
+  }
+  
+  .notification-toast.closed {
+    display: none;
+  }
+  
+  .toast-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: #555;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .toast-close-btn:hover {
+    color: #000;
+  }
+  
+  .toast-banner {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 12px; /* Rounded corners for the banner */
+    overflow: hidden;
+  }
+  
+  .toast-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures a consistent look */
+  }
+  
+  .toast-detail {
+    flex-grow: 1;
+    padding-right: 10px;
+  }
+  
+  .toast-message {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 6px;
+  }
+  
+  .toast-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .toast-meta {
+    font-size: 0.75rem;
+    color: #555;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Reversed gradient on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+  }
+  
+  .add-to-cart-btn:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+  }
+  
+  /* Animation for smoother visibility */
+  @keyframes slideInOut {
+    0%, 45%, 100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50%, 95% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
 /*** Testimonial ***/
 .testimonial-img {
     position: relative;
