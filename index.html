@@ -211,9 +211,26 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-sm btn-outline-primary me-2" onclick="updateQuantity(-1)">-</button>
-                        <span id="quantity">1</span>
-                        <button class="btn btn-sm btn-outline-primary ms-2" onclick="updateQuantity(1)">+</button>
+                        <!-- Subtract Quantity -->
+                        <img 
+                            src="img/bnac/re.png" 
+                            alt="Subtract" 
+                            class="action-icon me-2" 
+                            onclick="updateQuantity(-1)" 
+                            style="height: 30px;width: 30px;"
+                        />
+                        
+                        <!-- Display Quantity -->
+                        <span id="quantity" class="mx-3 fw-bold">1</span>
+                        
+                        <!-- Add Quantity -->
+                        <img 
+                            src="img/bnac/up.png" 
+                            alt="Add" 
+                            class="action-icon ms-2" 
+                            onclick="updateQuantity(1)" 
+                            style="height: 30px;width: 30px;"
+                        />
                     </div>
                 </div>
                 <hr>
@@ -230,7 +247,7 @@
             <div>
                 <hr>
                 <h6 class="text-muted">You may also like</h6>
-                <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+                <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="5000">
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         <!-- Item 1 -->
@@ -243,16 +260,49 @@
                                         <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
                                     </div>
                                 </div>
-                                <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px; left: -10px;">
+                                <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
                                     +
                                 </button>
                             </div>
                         </div>
-                        
-                        <!-- Additional carousel items -->
+            
+                        <!-- Item 2 -->
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/bnac/muk.jpg" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="m-0">Murukku Mix</h6>
+                                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/bnac/ka.png" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="m-0">Kadala Mittai</h6>
+                                        <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- Add more items as needed -->
                     </div>
                 </div>
             </div>
+            
+            
         </div>
     </div>
     
