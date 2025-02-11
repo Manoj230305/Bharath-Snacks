@@ -143,18 +143,21 @@
     </div>
     <!-- Page Header End -->
 
+
     <!-- Product Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
-                <div class="text-center mx-auto mb-4" style="max-width: 500px;">
-                    <button class="btn btn-primary mx-2 category-btn" data-category="new">All</button>
-                    <button class="btn btn-primary mx-2 category-btn" data-category="snacks">Snacks</button>
-                    <button class="btn btn-primary mx-2 category-btn" data-category="bakery">Bakery</button>
-                    <button class="btn btn-primary mx-2 category-btn" data-category="gift-boxes">Gift Boxes</button>
+                <div class="text-center mx-auto mb-4 d-flex justify-content-center gap-3 flex-wrap" style="max-width: 500px;">
+                    <button class="btn btn-primary category-btn active" data-category="new">New</button>
+                    <button class="btn category-btn" data-category="snacks">Snacks</button>
+                    <button class="btn category-btn" data-category="bakery">Bakery</button>
+                    <button class="btn category-btn" data-category="gift-boxes">Gift Boxes</button>
                 </div>
             </div>
+            
+            
     
             <!-- Product Cards -->
             <div id="productContainer" class="row gx-4">
