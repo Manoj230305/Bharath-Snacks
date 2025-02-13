@@ -35,10 +35,10 @@
 
         <link href="css/style.css" rel="stylesheet">
         <link href="css/style_prod.css" rel="stylesheet">
-        <!-- <link href="css/carousel.css" rel="stylesheet"> -->
-        <!-- <link rel="stylesheet" type="text/css" href="css/stylenew.css"> -->
-        <!-- <link href="css/prod.css" rel="stylesheet"> -->
-        <!-- <link href="css/main.css" rel="stylesheet"> -->
+        <link href="css/carousel.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/stylenew.css">
+        <link href="css/prod.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
     </head>
 
     <body>
@@ -61,259 +61,430 @@
 
         <!-- Header Start -->
         <header class="header">
-            <div class="container-fluid ps-0">
-                <div class="row py-1 border-bottom align-items-center justify-content-between">
-                    <!-- Hamburger Menu Icon -->
-                    <div class="col-2 d-flex align-items-center d-lg-none">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-        
-                    <!-- Title Section -->
-                    <div class="col-8 text-center d-lg-none">
-                        <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-center">
-                            <h2 class="m-0" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
-                        </a>
-                    </div>
-        
-                    <!-- Icons Section -->
-                    <div class="col-2 d-flex justify-content-end align-items-center d-lg-none">
-                        <ul class="d-flex justify-content-end list-unstyled m-0">
-                            <li class="position-relative">
-                                <a href="#" class="p-2 mx-1">
-                                    <svg width="24" height="24"><use xlink:href="#user"></use></svg>
-                                </a>
-                            </li>
-                            <li class="position-relative">
-                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#wishlist" aria-controls="offcanvasWishlist">
-                                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
-                                    <span class="count-popout" id="wishlist-counter">1</span>
-                                </a>
-                            </li>
-                            <li class="position-relative">
-                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
-                                    <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
-                                    <span class="count-popout" id="shopping-cart-counter">1</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <!-- Logo Section for Desktop -->
-                    <div class="col-12 col-lg-4 text-center d-none d-lg-flex justify-content-center">
-                        <div class="d-flex align-items-center my-3 my-sm-0">
-                            <a href="index.html" class="navbar-brand d-flex align-items-center">
-                                <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
-                                <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <!-- Search Bar Section for Desktop -->
-                    <div class="col-12 col-lg-3 d-none d-lg-flex py-2 justify-content-center">
-                        <div class="search-bar col row bg-light p-2 align-items-center" style="border-radius: 20px;">
-                            <div class="col">
-                                <form id="search-form" class="text-center" action="index.html" method="post">
-                                    <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
-                                </form>
-                            </div>
-                            <div class="col-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Navigation Links for Desktop -->
-                    <div class="col-12 col-lg-4 d-none d-lg-flex py-1 justify-content-center">
-                        <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center align-items-center text-dark">
-                            <li class="nav-item nav-link">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item nav-link">
-                                <a href="#section_2" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item nav-link">
-                                <a href="product.html" class="nav-link">Products</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
-                                <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                                    <li><a href="index.html" class="dropdown-item">About Us</a></li>
-                                    <li><a href="index.html" class="dropdown-item">Shop</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <!-- Icons Section for Desktop -->
-                    <div class="col-12 col-lg-1 d-none d-lg-flex mt-4 px-4 gap-5 align-items-center justify-content-center">
-                        <ul class="d-flex justify-content-end list-unstyled m-0">
-                            <li class="position-relative">
-                                <a href="#" class="">
-                                    <svg width="24" height="24"><use xlink:href="#user"></use></svg>
-                                </a>
-                            </li>
-                            <li class="position-relative">
-                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#wishlist" aria-controls="offcanvasWishlist">
-                                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
-                                    <span class="count-popout" id="wishlist-counter">1</span>
-                                </a>
-                            </li>
-                            <li class="position-relative">
-                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
-                                    <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
-                                    <span class="count-popout" id="shopping-cart-counter">1</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="container-fluid">
+              <div class="row py-3 border-bottom align-items-center">
+                <!-- Logo Section -->
+                <div class="col-sm-4 col-lg-4 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
+                  <div class="d-flex align-items-center my-3 my-sm-0">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                      <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
+                      <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
+                    </a>
+                  </div>
                 </div>
-            </div>
-        
-            <!-- Offcanvas Mobile-Window Navbar -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav opt-nav list-unstyled d-flex flex-column gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
-                        <li class="nav-item nav-link">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item nav-link">
-                            <a href="#section_2" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item nav-link">
-                            <a href="product.html" class="nav-link">Products</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
-                            <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                                <li><a href="index.html" class="dropdown-item">About Us</a></li>
-                                <li><a href="index.html" class="dropdown-item">Shop</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Shopping Cart Offcanvas -->
-            <div class="offcanvas offcanvas-end d-flex flex-column" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel">
-                <div class="offcanvas-header">
-                    <h5 id="shoppingCartLabel" class="offcanvas-title">Shopping Cart</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="cart-item d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center">
-                                <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                                <div>
-                                    <h6 class="m-0">Murukku</h6>
-                                    <small class="text-muted">100 g</small>
-                                    <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <!-- Subtract Quantity -->
-                                <img 
-                                    src="img/bnac/re.png" 
-                                    alt="Subtract" 
-                                    class="action-icon me-2" 
-                                    onclick="updateQuantity(-1)" 
-                                    style="height: 30px;width: 30px;"
-                                />
-                                
-                                <!-- Display Quantity -->
-                                <span id="quantity" class="mx-3 fw-bold">1</span>
-                                
-                                <!-- Add Quantity -->
-                                <img 
-                                    src="img/bnac/up.png" 
-                                    alt="Add" 
-                                    class="action-icon ms-2" 
-                                    onclick="updateQuantity(1)" 
-                                    style="height: 30px;width: 30px;"
-                                />
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <h6 class="m-0">Subtotal</h6>
-                            <h6 class="m-0">Rs. 149.00</h6>
-                        </div>
-                        <div class="mt-3">
-                            <button class="btn-primary w-100 d-flex align-items-center justify-content-center">
-                                <a href="service.html"><i class="btn-icon me-2">🛒</i> Checkout</a>
-                            </button>
-                        </div>
+          
+                <!-- Search Bar Section -->
+                <div class="col-sm-6 offset-sm-2 py-2 offset-md-0 col-lg-3">
+                  <div class="search-bar row bg-light p-2 align-items-center" style="border-radius: 20px;">
+                    <div class="col-11 col-md-10">
+                      <form id="search-form" class="text-center" action="index.html" method="post">
+                        <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
+                      </form>
                     </div>
-                    <div>
-                        <hr>
-                        <h6 class="text-muted">You may also like</h6>
-                        <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="5000">
-                            <!-- Carousel items -->
-                            <div class="carousel-inner">
-                                <!-- Item 1 -->
-                                <div class="carousel-item active">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/bnac/sev.png" alt="Suggestion 1" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                                            <div>
-                                                <h6 class="m-0">Sakkarai Pongal Mix</h6>
-                                                <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
-                                            +
-                                        </button>
-                                    </div>
-                                </div>
+                    <div class="col-1 px-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Navigation Links -->
+                <div class="col-lg-4 py-1">
+                  <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
+                    <li class="nav-item nav-link">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                      <a href="#section_2" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                      <a href="product.html" class="nav-link">Products</a>
+                    </li>
                     
-                                <!-- Item 2 -->
-                                <div class="carousel-item">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/bnac/muk.jpg" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                                            <div>
-                                                <h6 class="m-0">Murukku Mix</h6>
-                                                <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
-                                            +
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img src="img/bnac/ka.png" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                                            <div>
-                                                <h6 class="m-0">Kadala Mittai</h6>
-                                                <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
-                                            +
-                                        </button>
-                                    </div>
-                                </div>
-                    
-                                <!-- Add more items as needed -->
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                      <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                        <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                        <li><a href="index.html" class="dropdown-item">Shop</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
+          
+                <!-- Icons Section -->
+                <div class="col-sm-8 col-lg-1 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
+                  <ul class="d-flex justify-content-end list-unstyled m-0">
+                    <li>
+                      <a href="#" class="p-2 mx-1">
+                        <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                        <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                        <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
         </header>
+          
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <defs>
+                <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><circle cx="12" cy="9" r="3"/><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"/></g></symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-bag" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M3.864 16.455c-.858-3.432-1.287-5.147-.386-6.301C4.378 9 6.148 9 9.685 9h4.63c3.538 0 5.306 0 6.207 1.154c.901 1.153.472 2.87-.386 6.301c-.546 2.183-.818 3.274-1.632 3.91c-.814.635-1.939.635-4.189.635h-4.63c-2.25 0-3.375 0-4.189-.635c-.814-.636-1.087-1.727-1.632-3.91Z"/><path d="m19.5 9.5l-.71-2.605c-.274-1.005-.411-1.507-.692-1.886A2.5 2.5 0 0 0 17 4.172C16.56 4 16.04 4 15 4M4.5 9.5l.71-2.605c.274-1.005.411-1.507.692-1.886A2.5 2.5 0 0 1 7 4.172C7.44 4 7.96 4 9 4"/><path d="M9 4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 13v4m8-4v4m-4-4v4"/></g></symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" id="wishlist" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M21 16.09v-4.992c0-4.29 0-6.433-1.318-7.766C18.364 2 16.242 2 12 2C7.757 2 5.636 2 4.318 3.332C3 4.665 3 6.81 3 11.098v4.993c0 3.096 0 4.645.734 5.321c.35.323.792.526 1.263.58c.987.113 2.14-.907 4.445-2.946c1.02-.901 1.529-1.352 2.118-1.47c.29-.06.59-.06.88 0c.59.118 1.099.569 2.118 1.47c2.305 2.039 3.458 3.059 4.445 2.945c.47-.053.913-.256 1.263-.579c.734-.676.734-2.224.734-5.321Z"/><path stroke-linecap="round" d="M15 6H9"/></g></symbol>
+    
+            </defs>
+        </svg>
+        
+        <!-- Offcanvas Mobile-Window Navbar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav opt-nav list-unstyled d-flex flex-column gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
+                    <li class="nav-item nav-link">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="#section_2" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="product.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                        <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                            <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="index.html" class="dropdown-item">Shop</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <!-- Shopping Cart Offcanvas -->
+        <div class="offcanvas offcanvas-end d-flex flex-column" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel">
+            <div class="offcanvas-header">
+                <h5 id="shoppingCartLabel" class="offcanvas-title">Shopping Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="cart-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                            <div>
+                                <h6 class="m-0">Murukku</h6>
+                                <small class="text-muted">100 g</small>
+                                <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <!-- Subtract Quantity -->
+                            <img 
+                                src="img/bnac/re.png" 
+                                alt="Subtract" 
+                                class="action-icon me-2" 
+                                onclick="updateQuantity(-1)" 
+                                style="height: 30px;width: 30px;"
+                            />
+                            
+                            <!-- Display Quantity -->
+                            <span id="quantity" class="mx-3 fw-bold">1</span>
+                            
+                            <!-- Add Quantity -->
+                            <img 
+                                src="img/bnac/up.png" 
+                                alt="Add" 
+                                class="action-icon ms-2" 
+                                onclick="updateQuantity(1)" 
+                                style="height: 30px;width: 30px;"
+                            />
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h6 class="m-0">Subtotal</h6>
+                        <h6 class="m-0">Rs. 149.00</h6>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn-primary w-100 d-flex align-items-center justify-content-center">
+                            <a href="service.html"><i class="btn-icon me-2">🛒</i> Checkout</a>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <h6 class="text-muted">You may also like</h6>
+                    <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="5000">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <!-- Item 1 -->
+                            <div class="carousel-item active">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/bnac/sev.png" alt="Suggestion 1" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="m-0">Sakkarai Pongal Mix</h6>
+                                            <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <!-- Item 2 -->
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/bnac/muk.jpg" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="m-0">Murukku Mix</h6>
+                                            <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/bnac/ka.png" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="m-0">Kadala Mittai</h6>
+                                            <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <!-- Add more items as needed -->
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        </header>
+
+        <section class="main">
+            <div class="default gallery">
+              <div class="main-img">
+                <img
+                  class="active"
+                  src="images/image-product-1.jpg"
+                  alt="product-img"
+                />
+                <img src="images/image-product-2.jpg" alt="product-img" />
+                <img src="images/image-product-3.jpg" alt="product-img" />
+                <img src="images/image-product-4.jpg" alt="product-img" />
+              </div>
+              <div class="thumb-list">
+                <div class="active">
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    alt="product-img"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="images/image-product-2-thumbnail.jpg"
+                    alt="product-img"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="images/image-product-3-thumbnail.jpg"
+                    alt="product-img"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="images/image-product-4-thumbnail.jpg"
+                    alt="product-img"
+                  />
+                </div>
+              </div>
+            </div>
+    
+            <div class="lightbox">
+              <div class="gallery">
+                <div class="main-img">
+                  <!-- icons -->
+                  <span class="icon-close">
+                    <svg width="144" height="145" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                        fill="#69707D"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span class="icon-prev">
+                    <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 1 3 9l8 8"
+                        stroke="#1D2026"
+                        stroke-width="3"
+                        fill="none"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span class="icon-next">
+                    <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="m2 1 8 8-8 8"
+                        stroke="#1D2026"
+                        stroke-width="3"
+                        fill="none"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+    
+                  <!-- main images -->
+                  <img
+                    class="active"
+                    src="images/image-product-1.jpg"
+                    alt="product-img"
+                  />
+                  <img src="images/image-product-2.jpg" alt="product-img" />
+                  <img src="images/image-product-3.jpg" alt="product-img" />
+                  <img src="images/image-product-4.jpg" alt="product-img" />
+                </div>
+                <div class="thumb-list">
+                  <div class="active">
+                    <img
+                      src="images/image-product-1-thumbnail.jpg"
+                      alt="product-img"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="images/image-product-2-thumbnail.jpg"
+                      alt="product-img"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="images/image-product-3-thumbnail.jpg"
+                      alt="product-img"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="images/image-product-4-thumbnail.jpg"
+                      alt="product-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="content">
+    
+              <div class="price-info">
+    
+              </div>
+              <div class="badges">
+                <h2 class="product-title">Thinai Sakkarai Pongal</h2>
+                <div class="vegetarian-pill flex product-attributes">PURE VEG</div>
+              </div>
+              <div class="badges">
+                <div class="attribute">No Maida</div>
+                <div class="attribute">Best Seller</div>
+                <div class="attribute">No Maida</div>
+                <div class="attribute">Best Seller</div>
+                <div class="attribute">No Maida</div>
+                <div class="attribute">Best Seller</div>
+              </div>
+              <div class="price-container">
+                <span class="original-price">Rs. 169</span>
+                <span class="price">Rs. 166</span>
+                <span class="discount">SAVE 2%</span>
+                <span class="weight">(150g)</span>
+              </div>
+              <div class="rating-container">
+                <span class="star-icon">★</span>
+                <span class="rating-number">4.81</span>
+                
+                <span class="review-text">
+                  <span class="verified-icon">     |    ✔</span>
+                  569 Verified Reviews
+                </span>
+              </div>
+              <div class="add-to-cart-container">
+                <div class="counter">
+                  <button class="minus">
+                    <svg
+                      width="12"
+                      height="4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <defs>
+                        <path
+                          d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                          id="a"
+                        />
+                      </defs>
+                      <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
+                    </svg>
+                  </button>
+                  <span class="count">0</span>
+                  <button class="plus">
+                    <svg
+                      width="12"
+                      height="12"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <defs>
+                        <path
+                          d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                          id="b"
+                        />
+                      </defs>
+                      <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
+                    </svg>
+                  </button>
+                </div>
+                <button class="add-to-cart">
+                  <span>
+                    <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                        fill="#69707D"
+                        fill-rule="nonzero"
+                      />
+                    </svg>
+                  </span>
+                  <span><a href="service.html" style="color: white;">Add to cart</a></span>
+                </button>
+              </div>
+            </div>
+          </section>
 
         <!--Unique Selling Points-->
         <section class="text-center py-4">
@@ -1001,23 +1172,80 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </body>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>    
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- <script src="js/mainpro.js"></script> -->
-    <!-- <script src="js/slider.js" ></script> -->
-    <!-- <script src="js/cart.js" ></script> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>    
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/mainpro.js"></script>
+        <script src="js/slider.js" ></script>
+        <script src="js/cart.js" ></script>
+        <script>
+            const thumbnails = document.querySelectorAll('.product-thumbnails img');
+            const mainImage = document.getElementById('main-image');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
+    
+            let currentIndex = 0;
+    
+            const images = Array.from(thumbnails).map((img) =>
+            img.getAttribute('data-image')
+            );
+    
+            // Update main image based on index
+            function updateMainImage(index) {
+            mainImage.src = images[index];
+            currentIndex = index;
+            thumbnails.forEach((thumb, i) => {
+                thumb.style.borderColor = i === index ? '#007bff' : 'transparent';
+            });
+            }
+    
+            // Thumbnail click event
+            thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => updateMainImage(index));
+            });
+    
+            // Arrow navigation
+            leftArrow.addEventListener('click', () => {
+            const newIndex = (currentIndex - 1 + images.length) % images.length;
+            updateMainImage(newIndex);
+            });
+    
+            rightArrow.addEventListener('click', () => {
+            const newIndex = (currentIndex + 1) % images.length;
+            updateMainImage(newIndex);
+            });
+    
+            // Initial setup
+            updateMainImage(currentIndex);
+
+            const counter = document.getElementById('counter');
+            const increaseButton = document.getElementById('increase');
+            const decreaseButton = document.getElementById('decrease');
+        
+            let count = 0;
+        
+            increaseButton.addEventListener('click', () => {
+                count++;
+                counter.textContent = count;
+            });
+        
+            decreaseButton.addEventListener('click', () => {
+                count--;
+                counter.textContent = count;
+            });
+        </script>
+</body>
 </html>
