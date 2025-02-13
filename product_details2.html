@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Products_VJY</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style_prod.css" rel="stylesheet">
+        <!-- <link href="css/carousel.css" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/stylenew.css"> -->
+        <!-- <link href="css/prod.css" rel="stylesheet"> -->
+        <!-- <link href="css/main.css" rel="stylesheet"> -->
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+        </div>
+        <!-- Spinner End -->
+        
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <defs>
+                <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><circle cx="12" cy="9" r="3"/><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"/></g></symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-bag" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M3.864 16.455c-.858-3.432-1.287-5.147-.386-6.301C4.378 9 6.148 9 9.685 9h4.63c3.538 0 5.306 0 6.207 1.154c.901 1.153.472 2.87-.386 6.301c-.546 2.183-.818 3.274-1.632 3.91c-.814.635-1.939.635-4.189.635h-4.63c-2.25 0-3.375 0-4.189-.635c-.814-.636-1.087-1.727-1.632-3.91Z"/><path d="m19.5 9.5l-.71-2.605c-.274-1.005-.411-1.507-.692-1.886A2.5 2.5 0 0 0 17 4.172C16.56 4 16.04 4 15 4M4.5 9.5l.71-2.605c.274-1.005.411-1.507.692-1.886A2.5 2.5 0 0 1 7 4.172C7.44 4 7.96 4 9 4"/><path d="M9 4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 13v4m8-4v4m-4-4v4"/></g></symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" id="wishlist" viewBox="0 0 24 24"><g fill="none" stroke="black" stroke-width="1.5"><path d="M21 16.09v-4.992c0-4.29 0-6.433-1.318-7.766C18.364 2 16.242 2 12 2C7.757 2 5.636 2 4.318 3.332C3 4.665 3 6.81 3 11.098v4.993c0 3.096 0 4.645.734 5.321c.35.323.792.526 1.263.58c.987.113 2.14-.907 4.445-2.946c1.02-.901 1.529-1.352 2.118-1.47c.29-.06.59-.06.88 0c.59.118 1.099.569 2.118 1.47c2.305 2.039 3.458 3.059 4.445 2.945c.47-.053.913-.256 1.263-.579c.734-.676.734-2.224.734-5.321Z"/><path stroke-linecap="round" d="M15 6H9"/></g></symbol>
+                <symbol id="looxicons-rating-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </symbol>
+            </defs>
+        </svg>
+
+        <!-- Header Start -->
+        <header class="header">
+            <div class="container-fluid ps-0">
+                <div class="row py-1 border-bottom align-items-center justify-content-between">
+                    <!-- Hamburger Menu Icon -->
+                    <div class="col-2 d-flex align-items-center d-lg-none">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+        
+                    <!-- Title Section -->
+                    <div class="col-8 text-center d-lg-none">
+                        <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-center">
+                            <h2 class="m-0" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
+                        </a>
+                    </div>
+        
+                    <!-- Icons Section -->
+                    <div class="col-2 d-flex justify-content-end align-items-center d-lg-none">
+                        <ul class="d-flex justify-content-end list-unstyled m-0">
+                            <li class="position-relative">
+                                <a href="#" class="p-2 mx-1">
+                                    <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#wishlist" aria-controls="offcanvasWishlist">
+                                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                                    <span class="count-popout" id="wishlist-counter">1</span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                                    <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                                    <span class="count-popout" id="shopping-cart-counter">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Logo Section for Desktop -->
+                    <div class="col-12 col-lg-4 text-center d-none d-lg-flex justify-content-center">
+                        <div class="d-flex align-items-center my-3 my-sm-0">
+                            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                                <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
+                                <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Search Bar Section for Desktop -->
+                    <div class="col-12 col-lg-3 d-none d-lg-flex py-2 justify-content-center">
+                        <div class="search-bar col row bg-light p-2 align-items-center" style="border-radius: 20px;">
+                            <div class="col">
+                                <form id="search-form" class="text-center" action="index.html" method="post">
+                                    <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
+                                </form>
+                            </div>
+                            <div class="col-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Navigation Links for Desktop -->
+                    <div class="col-12 col-lg-4 d-none d-lg-flex py-1 justify-content-center">
+                        <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center align-items-center text-dark">
+                            <li class="nav-item nav-link">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <a href="#section_2" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <a href="product.html" class="nav-link">Products</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                                <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                                    <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                                    <li><a href="index.html" class="dropdown-item">Shop</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Icons Section for Desktop -->
+                    <div class="col-12 col-lg-1 d-none d-lg-flex mt-4 px-4 gap-5 align-items-center justify-content-center">
+                        <ul class="d-flex justify-content-end list-unstyled m-0">
+                            <li class="position-relative">
+                                <a href="#" class="">
+                                    <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#wishlist" aria-controls="offcanvasWishlist">
+                                    <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                                    <span class="count-popout" id="wishlist-counter">1</span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                                    <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                                    <span class="count-popout" id="shopping-cart-counter">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Offcanvas Mobile-Window Navbar -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav opt-nav list-unstyled d-flex flex-column gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
+                        <li class="nav-item nav-link">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a href="#section_2" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a href="product.html" class="nav-link">Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                            <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                                <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                                <li><a href="index.html" class="dropdown-item">Shop</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Shopping Cart Offcanvas -->
+            <div class="offcanvas offcanvas-end d-flex flex-column" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel">
+                <div class="offcanvas-header">
+                    <h5 id="shoppingCartLabel" class="offcanvas-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="cart-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="m-0">Murukku</h6>
+                                    <small class="text-muted">100 g</small>
+                                    <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 149.00</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <!-- Subtract Quantity -->
+                                <img 
+                                    src="img/bnac/re.png" 
+                                    alt="Subtract" 
+                                    class="action-icon me-2" 
+                                    onclick="updateQuantity(-1)" 
+                                    style="height: 30px;width: 30px;"
+                                />
+                                
+                                <!-- Display Quantity -->
+                                <span id="quantity" class="mx-3 fw-bold">1</span>
+                                
+                                <!-- Add Quantity -->
+                                <img 
+                                    src="img/bnac/up.png" 
+                                    alt="Add" 
+                                    class="action-icon ms-2" 
+                                    onclick="updateQuantity(1)" 
+                                    style="height: 30px;width: 30px;"
+                                />
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="m-0">Subtotal</h6>
+                            <h6 class="m-0">Rs. 149.00</h6>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn-primary w-100 d-flex align-items-center justify-content-center">
+                                <a href="service.html"><i class="btn-icon me-2">🛒</i> Checkout</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <h6 class="text-muted">You may also like</h6>
+                        <div id="productCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="5000">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <!-- Item 1 -->
+                                <div class="carousel-item active">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/bnac/sev.png" alt="Suggestion 1" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                            <div>
+                                                <h6 class="m-0">Sakkarai Pongal Mix</h6>
+                                                <p class="m-0 mt-1 text-danger"><del>Rs. 249.00</del> Rs. 189.00</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                    
+                                <!-- Item 2 -->
+                                <div class="carousel-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/bnac/muk.jpg" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                            <div>
+                                                <h6 class="m-0">Murukku Mix</h6>
+                                                <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/bnac/ka.png" alt="Suggestion 2" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                            <div>
+                                                <h6 class="m-0">Kadala Mittai</h6>
+                                                <p class="m-0 mt-1 text-danger"><del>Rs. 199.00</del> Rs. 159.00</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary d-flex align-items-center justify-content-center rounded-circle p-2" style="font-size: 20px; width: 40px; height: 40px;">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                    
+                                <!-- Add more items as needed -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </header>
+
+        <!--Unique Selling Points-->
+        <section class="text-center py-4">
+            <div class="container">
+                <h2 class="fw-bold">Elevating The Culinary Experience</h2>
+                <p class="sub-text text-muted">By exquisite sourcing, impeccable craftsmanship</p>
+                <div class="row mt-4">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 text-center p-3 hover-shadow">
+                            <img src="images/i1.jpg" alt="Quality Assurance Icon" class="mx-auto" width="50">
+                            <h3 class="f-title mt-3">Quality Assurance</h3>
+                            <p class="text-muted">Certified, sourced ingredients, unparalleled authenticity.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 text-center p-3 hover-shadow">
+                            <img src="images/i2.jpg" alt="Purity Icon" class="mx-auto" width="50">
+                            <h3 class="f-title mt-3">Purity In Every Bite</h3>
+                            <p class="text-muted">All products are free of artificial flavours or added preservatives.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 text-center p-3 hover-shadow">
+                            <img src="images/i3.jpg" alt="Authenticity Icon" class="mx-auto" width="50">
+                            <h3 class="f-title mt-3">Crafting Authenticity</h3>
+                            <p class="text-muted">We hire our karigars, maintaining our high standards for product excellence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 text-center p-3 hover-shadow">
+                            <img src="images/i4.png" alt="Excellence Icon" class="mx-auto" width="50">
+                            <h3 class="f-title mt-3">Excellence</h3>
+                            <p class="text-muted">We adhere to global hygiene standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Snacks Range Start -->
+        <div class="container">
+            <h2 class="snack-title d-flex justify-content-center">Shop Our Snack Range</h2>
+            <div class="row g-4 my-4">
+                <!-- Linden Honey -->
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="honey-card shadow bg-linden">
+                        <img src="images/img-2.png" alt="img-1" class="honey-image">
+                        <div class="honey-content me-4">
+                            <h4 class="honey-title">South Indian Special</h4>
+                            <p class="honey-description">Linden honey has a strong and very distinctive aroma...</p>
+                            <a href="#" class="honey-link d-flex justify-content-end">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Jamun Honey -->
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="honey-card bg-jamun">
+                        <img src="images/img-2.png" alt="img-2" class="honey-image">
+                        <div class="honey-content me-4">
+                            <h3 class="honey-title">Indian Bakery</h3>
+                            <p class="honey-description">Jamun honey is famous for its antihypoxic activity...</p>
+                            <a href="#" class="honey-link">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 my-4">
+                <!-- Organic Honey -->
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="honey-card bg-organic">
+                        <img src="images/img-2.png" alt="img-3" class="honey-image">
+                        <div class="honey-content">
+                            <h3 class="honey-title">Indian Biscuits</h3>
+                            <p class="honey-description">Organic honey is highly nutritious honey made by bees...</p>
+                            <a href="#" class="honey-link">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Flower Honey -->
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="honey-card bg-flower">
+                        <img src="images/img-2.png" alt="img-4" class="honey-image">
+                        <div class="honey-content">
+                            <h3 class="honey-title">Tea Time Snacks</h3>
+                            <p class="honey-description">There are many different varieties of flower honey available...</p>
+                            <a href="#" class="honey-link">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Product Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-3">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <p class="section-title bg-white text-center text-primary px-3">Related Products</p>
+                    </div>
+                    <a href="product.html" class="btn btn-primary">View All</a>
+                </div>
+                <div id="bestsellersCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row gx-4 p-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item animated-card">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="img/bnac/ka.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="product details.html"><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Chikkis</a>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="img/bnac/muk.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Murukku</a>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="img/bnac/ru.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Wheat Rusk</a>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="img/bnac/oorud.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Kadala Orrundai</a>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row gx-4 p-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" href="product.html" src="img/bnac/ru.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Wheat Rusk</a>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="img/bnac/oorud.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Kadala Orrundai</a>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="img/bnac/ka.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Chikkis</a>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="img/bnac/all.png" alt="">
+                                            <div class="product-overlay">
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
+                                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center p-4">
+                                            <a class="d-block h5" href="product details.html">Kadala Orrundai</a>
+                                            <span class="text-primary me-1">Rs.19.00</span>
+                                            <span class="text-decoration-line-through">Rs.29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev custom-control-prev" type="button" data-bs-target="#bestsellersCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next custom-control-next" type="button" data-bs-target="#bestsellersCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <style>
+            .custom-control-prev {
+                left: -140px; /* Move further to the left */
+            }
+        
+            .custom-control-next {
+                right: -140px; /* Move further to the right */
+            }
+        
+            @media (max-width: 768px) {
+                .custom-control-prev {
+                    left: -20px; /* Adjust for smaller screens */
+                }
+        
+                .custom-control-next {
+                    right: -20px; /* Adjust for smaller screens */
+                }
+            }
+        </style>
+        <!-- Related Product End -->
+
+        <!-- Customer-Review -->
+        <div class="container-xxl d-flex justify-content-center align-items-center">
+            <div class="container">
+                <!-- Customer-Review Title -->
+                <div class="text-center">
+                    <h2 class="fw-bold">Customer Reviews</h2>
+                    <p class="sub-text text-muted">What our customers say about us</p>
+                    <button type="button" class="btn btn-1 text-dark mb-3" data-bs-toggle="modal" data-bs-target="#reviewModal">Write a Review</button>                </div>
+                <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item p-4 active">
+                            <div class="review-item col-md-6 p-4 shadow mx-auto">
+                                <div class="rev-content d-flex align-items-center">
+                                    <img src="img/team-1.jpg" alt="Customer Image" class="customer-img me-3">
+                                    <div>
+                                        <h3 class="rev-cus-name mb-1">Bruce Lee</h3>
+                                        <!-- Stars -->
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col d-flex align-items-center">
+                                                <span data-testid="rating-summary-avg" aria-label="5.0" class="stars">
+                                                    <ul class="star-list d-flex">
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rev-des align-items-start p-4 my-3">
+                                    <p class="rev-descrip text-dark mb-0">Suspendisse potenti. Vestibulum luctus justo sed nibh interdum, nec mollis sem convallis. Sed placerat sem ante, ut aliquam mauris lacinia ac. Praesent in diam eros.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <!-- Second Slide -->
+                        <div class="carousel-item p-4">
+                            <div class="review-item col-md-6 p-4 shadow mx-auto">
+                                <div class="rev-content d-flex align-items-center">
+                                    <img src="img/team-1.jpg" alt="Customer Image" class="customer-img me-3">
+                                    <div>
+                                        <h3 class="rev-cus-name mb-1">Bruce Lee</h3>
+                                        <!-- Stars -->
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col d-flex align-items-center">
+                                                <span data-testid="rating-summary-avg" aria-label="5.0" class="stars">
+                                                    <ul class="star-list d-flex">
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rev-des align-items-start p-4 my-3">
+                                    <p class="rev-descrip text-dark mb-0">Suspendisse potenti. Vestibulum luctus justo sed nibh interdum, nec mollis sem convallis. Sed placerat sem ante, ut aliquam mauris lacinia ac. Praesent in diam eros.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <!-- Third Slide -->
+                        <div class="carousel-item p-4">
+                            <div class="review-item col-md-6 p-4 shadow mx-auto">
+                                <div class="rev-content d-flex align-items-center">
+                                    <img src="img/team-1.jpg" alt="Customer Image" class="customer-img me-3">
+                                    <div>
+                                        <h3 class="rev-cus-name mb-1">Bruce Lee</h3>
+                                        <!-- Stars -->
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col d-flex align-items-center">
+                                                <span data-testid="rating-summary-avg" aria-label="5.0" class="stars">
+                                                    <ul class="star-list d-flex">
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rev-des align-items-start p-4 my-3">
+                                    <p class="rev-descrip text-dark mb-0">Suspendisse potenti. Vestibulum luctus justo sed nibh interdum, nec mollis sem convallis. Sed placerat sem ante, ut aliquam mauris lacinia ac. Praesent in diam eros.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <!-- Fourth Slide -->
+                        <div class="carousel-item p-4">
+                            <div class="review-item col-md-6 p-4 shadow mx-auto">
+                                <div class="rev-content d-flex align-items-center">
+                                    <img src="img/team-1.jpg" alt="Customer Image" class="customer-img me-3">
+                                    <div>
+                                        <h3 class="rev-cus-name mb-1">Bruce Lee</h3>
+                                        <!-- Stars -->
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col d-flex align-items-center">
+                                                <span data-testid="rating-summary-avg" aria-label="5.0" class="stars">
+                                                    <ul class="star-list d-flex">
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg viewBox="0 0 24 24" data-lx-fill="full" aria-label="rating icon full" role="img" class="loox-icon star text-large">
+                                                                <use href="#looxicons-rating-icon"></use>
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rev-des align-items-start p-4 my-3">
+                                    <p class="rev-descrip text-dark mb-0">Suspendisse potenti. Vestibulum luctus justo sed nibh interdum, nec mollis sem convallis. Sed placerat sem ante, ut aliquam mauris lacinia ac. Praesent in diam eros.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <button class="rev-carousel-control-prev carousel-control-prev rev-custom-carousel-control" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="rev-carousel-control-next carousel-control-next rev-custom-carousel-control" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <style>
+            .rev-des{
+                background: #fff4e6;
+                border-radius: 30px;
+            }
+
+            .rev-content{
+                padding-top: 30px; /* Adjust padding to fit reduced size */
+                padding-right: 22.5px; /* Adjust padding to fit reduced size */
+                /* padding-bottom: 30px; 
+                padding-left: 22.5px; /* Adjust padding to fit reduced size */
+                /* width: 100%; */
+            }
+
+            .rev-descrip{
+                font-size: 18px; /* Reduce font size */
+            }
+
+            .rev-cus-name{
+                font-size: 2rem; /* Reduce font size */
+            }
+
+            .review-item {
+                border-radius: 60px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+        
+            .review-text {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+        
+            .review-author {
+                font-size: 1rem;
+                color: #6c757d;
+            }
+        
+            .rev-custom-carousel-control {
+                top: 50%;
+                transform: translateY(-50%);
+                width: 5%;
+            }
+        
+            .rev-carousel-control-prev {
+                /* position: relative; */
+                left: 250px; /* Adjust to position closer to the card */
+            }
+        
+            .rev-carousel-control-next {
+                /* position: relative; */
+                right: 250px; /* Adjust to position closer to the card */
+            }
+        
+            @media (max-width: 768px) {
+                .rev-carousel-control-prev {
+                    position: relative;
+                    left: 10px; /* Adjust for smaller screens */
+                }
+        
+                .rev-carousel-control-next {
+                    position: relative;
+                    right: 10px; /* Adjust for smaller screens */
+                }
+            }
+        </style>
+
+        <!-- Modal -->
+        <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body text-center m-4">
+                        <form>
+                            <div class="mb-3">
+                                <h2>
+                                    <label for="rating" class="form-label">How would you rate this item?</label>
+                                </h2>
+                                <div id="rating g-4" class="d-flex gap-3 justify-content-center">
+                                    <span class="edit-star" data-value="1">&#9733;</span>
+                                    <span class="edit-star" data-value="2">&#9733;</span>
+                                    <span class="edit-star" data-value="3">&#9733;</span>
+                                    <span class="edit-star" data-value="4">&#9733;</span>
+                                    <span class="edit-star" data-value="5">&#9733;</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mb-3">
+                                <h2>
+                                    <label for="reviewText" class="form-label my-4">Express your words!</label>
+                                </h2>
+                                <textarea class="form-control custom-text-area p-3" id="reviewText" rows="10"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-1 mt-3">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .edit-star {
+                font-size: 3.5rem;
+                color: #ccc;
+                cursor: pointer;
+            }
+        
+            .edit-star.gold {
+                color: gold;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const stars = document.querySelectorAll('.edit-star');
+                stars.forEach(star => {
+                    star.addEventListener('click', function () {
+                        const value = this.getAttribute('data-value');
+                        stars.forEach(s => {
+                            s.classList.remove('gold');
+                            if (s.getAttribute('data-value') <= value) {
+                                s.classList.add('gold');
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-3">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <!-- <h5 class="text-white mb-4">Our Logo</h5> -->
+                        <img src="img/bnac/logo.png" alt="Company Logo" class="img-fluid" style="max-width: 100%; height: auto;">
+                    </div>
+                    
+
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <a class="btn btn-link" href="">Home</a>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Products</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Support</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Policies</h5>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Refund and Returns</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms of Services</a>
+                        <a class="btn btn-link" href="">Refund Policy</a>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative w-100">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Our Office</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2/143-5, Thirumalpuram, Veerapandi Road, Oomachikulam, Madurai - 625014.</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 97861 00191 / +91 72992 99294</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@bharathsnacks.in</p>
+                        <div class="d-flex pt-3">
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid bg-secondary text-body copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="fw-semi-bold" href="#">Bharath Snacks</a>, All Right Reserved.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>    
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="js/mainpro.js"></script> -->
+    <!-- <script src="js/slider.js" ></script> -->
+    <!-- <script src="js/cart.js" ></script> -->
+</html>

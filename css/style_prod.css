@@ -1,0 +1,180 @@
+.sub-text{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 6px hsla(28, 81%, 58%, 0.55);
+    transform: translateY(-10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-title{
+    font-size: 1.2rem;
+}
+
+/* .product-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0px;
+    transform: scale(0.95);
+    border-radius: 10px;
+} */
+
+a:hover{
+    text-decoration: none;
+}
+
+.snack-title{
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family:  "Libre Baskerville", serif;
+}
+
+.honey-card {
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    /* padding: 20px; */
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Ensures equal card height */
+    width: 95%;
+}
+.honey-card:hover {
+    transform: scale(1.02);
+}
+.honey-image {
+    position: relative;
+    width: 45%;
+    /* flex-wrap: wrap; */
+    align-content: flex-start;
+    height: 100%
+}
+.honey-content {
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    width: 55%;
+}
+.honey-title {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1;
+    font-family:  "Libre Baskerville", serif;
+}
+.honey-description {
+    text-align: left;
+    /* color: #1D1D1F; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.honey-link {
+    font-family: "Poppins", arial, sans-serif;
+    color: #EC720F;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+.honey-link:hover {
+    color: #EC720F;
+    text-decoration: none;
+}
+/* Background colors for each card */
+.bg-linden { background-color: #ffffff; }
+.bg-jamun { background-color: #FEAFAC; }
+.bg-organic { background-color: #E5D8AF; }
+.bg-flower { background-color:  #F6F0E6; }
+
+.star{
+    color: #EBBF20;
+    display: block;
+    width: 1.75em;
+    height: 1.75em;
+}
+
+.star-list{
+    display: inline-flex;
+    margin: unset;
+    padding: unset; 
+    text-indent: unset; 
+    list-style-type: none; 
+    /* gap: 1px; */
+}
+
+.rating-summary-avg{
+    margin-right: 10px; 
+    display:inline-flex; 
+    align-items: center;
+}
+
+.btn-1 {
+    font-weight: 600;
+    font-family: 'Satoshi', sans-serif;
+    border: 1px solid rgb(193, 191, 191);
+    color: black;
+}
+
+.btn-1:hover {
+    background-color: rgb(228, 228, 228);
+    /* color: white; */
+    /* font-weight: 900; */
+    /* letter-spacing: 1px; */
+}
+
+@media (max-width: 768px) {
+    .honey-card {
+        width: 75%; /* Reduce card width to 75% */
+        height: 65%; /* Reduce card height to 75% */
+        margin-bottom: 20px; 
+    }
+    .honey-image {
+        width: 45%; /* Reduce image width to 75% */
+        /* height: 90%; */
+    }
+    .honey-content {
+        padding-top: 60px; /* Adjust padding to fit reduced size */
+        padding-right: 22.5px; /* Adjust padding to fit reduced size */
+        padding-bottom: 60px; /* Adjust padding to fit reduced size */
+        padding-left: 22.5px; /* Adjust padding to fit reduced size */
+        width: 55%; /* Reduce content width to 75% */
+    }
+    .honey-title {
+        font-size: 0.9rem; /* Reduce font size */
+        margin-bottom: 15px; /* Adjust margin to fit reduced size */
+    }
+    .honey-description {
+        font-size: 13.5px; /* Reduce font size */
+        margin-bottom: 15px; /* Adjust margin to fit reduced size */
+    }
+    .honey-link {
+        font-size: 13.5px; /* Reduce font size */
+    }
+}
+
+.customer-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.custom-text-area{
+    border-radius: 20px;
+}

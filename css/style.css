@@ -7,7 +7,9 @@
 }
 
 body{
-    font-family: var(--bs-body-font-family);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .btn-custom-close{
@@ -427,7 +429,7 @@ body{
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .07);
 }
 
 .product-item .product-overlay {
