@@ -452,6 +452,36 @@ body{
     padding-top: 0;
 }
 
+/* Base Button Styles */
+.category-btn {
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Filled Button */
+.category-btn.btn-primary {
+    background-color: #eddd5e;
+    color: black;
+    border: none;
+}
+
+/* Outlined Button */
+.category-btn:not(.btn-primary) {
+    background: transparent;
+    border: 2px dashed #5c4634;
+    color: #5c4634;
+}
+
+/* Hover Effect */
+.category-btn:hover {
+    background-color: #eddd5e !important;
+    color: black !important;
+    border: none;
+}
+
 
 /*** Team ***/
 .team-item {

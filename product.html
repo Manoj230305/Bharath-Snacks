@@ -143,23 +143,28 @@
     </div>
     <!-- Page Header End -->
 
+    
+
+
     <!-- Product Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
-                <div class="text-center mx-auto mb-4" style="max-width: 500px;">
-                    <button class="btn btn-primary mx-2 category-btn" data-category="new">All</button>
-                    <button class="btn btn-primary mx-2 category-btn" data-category="snacks">Snacks</button>
-                    <button class="btn btn-primary mx-2 category-btn" data-category="bakery">Bakery</button>
-                    <button class="btn btn-primary mx-2 category-btn" data-category="gift-boxes">Gift Boxes</button>
+                <div class="text-center mx-auto mb-4 d-flex justify-content-center gap-3 flex-wrap" style="max-width: 500px;">
+                    <button class="btn btn-primary category-btn active" data-category="new">New</button>
+                    <button class="btn category-btn" data-category="snacks">Snacks</button>
+                    <button class="btn category-btn" data-category="bakery">Bakery</button>
+                    <button class="btn category-btn" data-category="gift-boxes">Gift Boxes</button>
                 </div>
             </div>
+            
+            
     
             <!-- Product Cards -->
             <div id="productContainer" class="row gx-4">
                 <!-- New Category -->
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="new">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="new">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/ka.png" alt="Chikkis">
@@ -177,7 +182,7 @@
                 </div>
     
                 <!-- Snacks Category -->
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="snacks">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="snacks">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/muk.png" alt="Murukku">
@@ -193,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="snacks">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="snacks">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/muruku.png" alt="Murukku">
@@ -209,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="snacks">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="snacks">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/ka.png" alt="Murukku">
@@ -227,7 +232,7 @@
                 </div>
     
                 <!-- Bakery Category -->
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="bakery">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="bakery">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/ru.png" alt="Wheat Rusk">
@@ -244,7 +249,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="bakery">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="bakery">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/rusk.png" alt="Wheat Rusk">
@@ -261,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="bakery">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="bakery">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/ru.png" alt="Wheat Rusk">
@@ -279,7 +284,7 @@
                 </div>
     
                 <!-- Gift Boxes Category -->
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="gift-boxes">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="gift-boxes">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/all.png" alt="Gift Box">
@@ -295,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3" data-category="gift-boxes">
+                <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="gift-boxes">
                     <div class="product-item">
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bnac/all.png" alt="Gift Box">
@@ -337,7 +342,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center; /* Ensures cards are centered */
-            gap: 20px; /* Adds space between cards */
+            /* gap: 20px; Adds space between cards */
         }
 
         .product-item {
@@ -454,6 +459,22 @@
                     } else {
                         card.style.display = 'none'; // Hide non-matching cards
                     }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".category-btn");
+        
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove("btn-primary", "active"));
+        
+                    // Add active class to clicked button
+                    this.classList.add("btn-primary", "active");
                 });
             });
         });
