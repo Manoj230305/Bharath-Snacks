@@ -321,6 +321,52 @@ body {
 .icon-next:hover {
   cursor: pointer;
 }
+
+.star-rating {
+  font-size: 20px; /* Adjust size as needed */
+  color: gold;
+  margin-top: -25px;
+}
+
+.wishlist-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #ff7b00; /* Warm orange tone */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.wishlist-button i {
+  transition: color 0.3s ease-in-out;
+}
+
+.wishlist-button.active i {
+  color: #ff4d4d; /* Red color when activated */
+}
+
+.description-button {
+  padding: 6px 12px;
+  border: 1px solid #ff7b00; /* Warm orange tone */
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ff7b00;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.description-button:hover {
+  background-color: #ff7b00;
+  color: white;
+}
+
+
+
+
 /* PURE VEG Label */
 .vegetarian-pill {
   background: linear-gradient(45deg, #3e8e41, #7ed957, #3e8e41, #7ed957);
@@ -330,8 +376,9 @@ body {
   margin-top: 10px;
   padding: 5px 15px;
   font-family: poppins, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
+  font-style: italic;
   text-align: center;
   transition: background-position 0.3s ease;
   animation: gradientShift 4s ease-in-out infinite;
@@ -378,6 +425,11 @@ body {
   text-align: center;
   font-weight: bold;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.attribute:hover {
+  background-color: #ff8c00;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 /* .icon-prev svg path {
   fill: var(--orange);

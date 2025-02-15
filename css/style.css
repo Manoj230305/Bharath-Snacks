@@ -452,35 +452,47 @@ body{
     padding-top: 0;
 }
 
-/* Base Button Styles */
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .category-btn {
-    border-radius: 30px;
-    padding: 8px 20px;
-    font-size: 16px;
-    font-weight: bold;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-icon {
+    width: 93px; /* Adjust size */
+    height: 93px;
+    border-radius: 50%;
+    /* padding: 5px; */
+    background-color: #f8f8f8; /* Light background */
     transition: all 0.3s ease;
 }
 
-/* Filled Button */
-.category-btn.btn-primary {
-    background-color: #eddd5e;
-    color: black;
-    border: none;
+.category-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #100000;
+    margin-top: 5px;
 }
 
-/* Outlined Button */
-.category-btn:not(.btn-primary) {
-    background: transparent;
-    border: 2px dashed #5c4634;
-    color: #5c4634;
+.category-btn.active .category-icon {
+    /* border: 2px solid #ff4d4d; Highlight active category */
+    background-color: #feffe6;
 }
 
-/* Hover Effect */
-.category-btn:hover {
-    background-color: #eddd5e !important;
-    color: black !important;
-    border: none;
+.category-btn:hover .category-icon {
+    transform: scale(1.1);
 }
+
+
 
 
 /*** Team ***/

@@ -144,7 +144,7 @@
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item nav-link">
-                  <a href="#section_2" class="nav-link">About</a>
+                  <a href="about.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item nav-link">
                   <a href="product.html" class="nav-link">Products</a>
@@ -466,7 +466,7 @@
         
         <div class="container">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
+                <p class="section-title bg-white text-center text-primary px-2">Our Tasty Delights</p>
                 <h1 class="mb-3"></h1>
             </div>
             
@@ -1436,49 +1436,67 @@
     <script>
         // Products data for dynamic updates
         const products = [
-          {
+        {
             image: "img/bnac/muk.jpg",
             message: "Crunchy Treats",
             title: "Snack Box",
             link: "product details.html"
-          },
-          {
+        },
+        {
             image: "img/bnac/ka.png",
             message: "Refreshing Drinks",
             title: "Drink Set",
             link: "product details.html"
-          },
-          {
+        },
+        {
             image: "img/bnac/box.jpg",
             message: "All in one box",
             title: "Gift Boxes",
             link: "product details.html"
-          },
+        },
         ];
-        
-        // Function to update toast content dynamically
+
         let currentIndex = 0;
-        
+        let toastTimer;
+
+        // Function to update toast content dynamically
         function updateToast() {
-          const toastImage = document.getElementById("toast-image");
-          const toastMessage = document.getElementById("toast-message");
-          const toastTitle = document.getElementById("toast-title");
-        //   const toastTime = document.getElementById("toast-time");
-          const toastLink = document.getElementById("toast-link");
-        
-          // Update content
-          toastImage.src = products[currentIndex].image;
-          toastMessage.textContent = products[currentIndex].message;
-          toastTitle.textContent = products[currentIndex].title;
-        //   toastTime.textContent = products[currentIndex].time;
-          toastLink.href = products[currentIndex].link;
-        
-          // Update index for next cycle
-          currentIndex = (currentIndex + 1) % products.length;
+        const toastImage = document.getElementById("toast-image");
+        const toastMessage = document.getElementById("toast-message");
+        const toastTitle = document.getElementById("toast-title");
+        const toastLink = document.getElementById("toast-link");
+
+        // Update content
+        toastImage.src = products[currentIndex].image;
+        toastMessage.textContent = products[currentIndex].message;
+        toastTitle.textContent = products[currentIndex].title;
+        toastLink.href = products[currentIndex].link;
+
+        // Update index for next cycle
+        currentIndex = (currentIndex + 1) % products.length;
+
+        // Restart timer unless hovered
+        startToastTimer();
         }
-        
-        // Set interval for dynamic updates
-        setInterval(updateToast, 10000); // Updates every 10 seconds
+
+        // Function to start the timer
+        function startToastTimer() {
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(updateToast, 10000);
+        }
+
+        // Stop timer on hover
+        const toastElement = document.querySelector(".notification-toast");
+
+        toastElement.addEventListener("mouseenter", () => {
+        clearTimeout(toastTimer); // Stops the auto-close behavior
+        });
+
+        toastElement.addEventListener("mouseleave", startToastTimer); // Resume the timer on mouse leave
+
+        // Initial call to start toast updates
+        startToastTimer();
+
     </script>
 
 </body>

@@ -152,15 +152,35 @@
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
                 <div class="text-center mx-auto mb-4 d-flex justify-content-center gap-3 flex-wrap" style="max-width: 500px;">
-                    <button class="btn btn-primary category-btn active" data-category="new">New</button>
-                    <button class="btn category-btn" data-category="snacks">Snacks</button>
-                    <button class="btn category-btn" data-category="bakery">Bakery</button>
-                    <button class="btn category-btn" data-category="gift-boxes">Gift Boxes</button>
+                    <div class="category-item">
+                        <button class="category-btn active" data-category="new">
+                            <img src="img/icons/new.png" alt="New" class="category-icon">
+                        </button>
+                        <p class="category-text">New</p>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-btn" data-category="snacks">
+                            <img src="img/icons/la.jpg" alt="Snacks" class="category-icon">
+                        </button>
+                        <p class="category-text">Snacks</p>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-btn" data-category="bakery">
+                            <img src="img/icons/bakery-03.jpg" alt="Bakery" class="category-icon">
+                        </button>
+                        <p class="category-text">Bakery</p>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-btn" data-category="gift-boxes">
+                            <img src="img/bnac/box.jpg" alt="Gift Boxes" class="category-icon">
+                        </button>
+                        <p class="category-text">Gift Boxes</p>
+                    </div>
                 </div>
             </div>
             
             
-    
+            
             <!-- Product Cards -->
             <div id="productContainer" class="row gx-4">
                 <!-- New Category -->
@@ -287,7 +307,7 @@
                 <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="gift-boxes">
                     <div class="product-item">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/bnac/all.png" alt="Gift Box">
+                            <img class="img-fluid" src="img/bnac/oorud.jpg" alt="Gift Box">
                             <div class="product-overlay">
                                 <a class="btn btn-square btn-secondary rounded-circle m-1" href="#"><i class="bi bi-heart"></i></a>
                                 <a class="btn btn-square btn-secondary rounded-circle m-1" href="#"><i class="bi bi-cart"></i></a>
@@ -303,7 +323,7 @@
                 <div class="col-md-6 mb-3 col-lg-4 col-xl-3" data-category="gift-boxes">
                     <div class="product-item">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/bnac/all.png" alt="Gift Box">
+                            <img class="img-fluid" src="img/bnac/ladu.jpg" alt="Gift Box">
                             <div class="product-overlay">
                                 <a class="btn btn-square btn-secondary rounded-circle m-1" href="#"><i class="bi bi-heart"></i></a>
                                 <a class="btn btn-square btn-secondary rounded-circle m-1" href="#"><i class="bi bi-cart"></i></a>
@@ -341,7 +361,7 @@
         #productContainer {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Ensures cards are centered */
+            /*justify-content: center;  Ensures cards are centered */
             /* gap: 20px; Adds space between cards */
         }
 
