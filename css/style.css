@@ -529,6 +529,11 @@ body{
     z-index: 10;
     animation: slideInOut 10s ease-in-out infinite;
   }
+
+  .notification-toast:hover{
+    left: 340px;
+    animation: slideInOut ease-in-out;
+  }
   
   .notification-toast.closed {
     display: none;
