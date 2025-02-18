@@ -535,3 +535,41 @@ header .cart::after {
   }
 }
 
+.wishlist-container {
+  display: flex;
+  gap: 10px;
+}
+
+.description-button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s;
+}
+
+.description-button i {
+  font-size: 16px;
+}
+
+.description-button:hover {
+  background: #e68900;
+}
+
+/* .wishlist-button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff4d4d;
+  transition: 0.3s;
+}
+
+.wishlist-button:hover {
+  color: #d43f3f;
+} */

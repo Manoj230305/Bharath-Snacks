@@ -330,20 +330,44 @@ body {
 
 .wishlist-button {
   background-color: transparent;
-  border: none;
+  border: 2px solid #ff7b00; /* Warm orange border */
+  border-radius: 30px; /* Rounded corners for a more elegant look */
+  padding: 12px 20px; /* Adequate padding for better clickability */
   font-size: 24px;
   color: #ff7b00; /* Warm orange tone */
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between the icon and text */
 }
 
 .wishlist-button i {
   transition: color 0.3s ease-in-out;
 }
 
-.wishlist-button.active i {
-  color: #ff4d4d; /* Red color when activated */
+/* Hover effect to change background and scale */
+.wishlist-button:hover {
+  background-color: #ff7b00;
+  color: white; /* Text and icon change color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
+
+/* Active state styling */
+.wishlist-button.active {
+  border-color: #f38282; /* Red border when active */
+}
+
+.wishlist-button.active i {
+  color: #f38282; /* Red icon color when active */
+}
+
+/* Optional: Add a subtle shadow effect to enhance the button's elegance */
+.wishlist-button:hover, .wishlist-button.active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+}
+
 
 .description-button {
   padding: 6px 12px;
@@ -528,10 +552,15 @@ body {
   text-decoration: line-through;
 }
 
-.add-to-cart-container {
+/* .add-to-cart-container {
   display: flex;
   align-items: center;
   gap: 15px;
+} */
+.add-to-cart-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .counter {
@@ -564,7 +593,7 @@ body {
   background-color: var(--orange);
   border: 0px;
   height: 55px;
-  width: 100%;
+  width: 60%;
   border-radius: 10px;
   font-weight: 700;
   display: flex;
@@ -573,7 +602,19 @@ body {
   gap: 15px;
   cursor: pointer;
   padding: 0 5px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+  background: linear-gradient(45deg, var(--orange), var(--yellow)); /* Initial gradient */
+  background-size: 200% 200%; /* Make the gradient bigger than the button */
+  transition: background-position 0.4s ease-in-out;
 }
+
+.add-to-cart:hover {
+  color: var(--yellow); /* Change text color on hover */
+  background-position: 100% 100%; /* Shift gradient to the other side */
+}
+
 
 .add-to-cart svg path {
   fill: var(--white);

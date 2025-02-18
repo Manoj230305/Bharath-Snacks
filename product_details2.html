@@ -292,8 +292,8 @@
       
             </header>
       
-            <section class="main">
-              <div class="default gallery">
+        <section class="main">
+            <div class="default gallery">
                 <div class="main-img">
                   <img
                     class="active"
@@ -439,65 +439,79 @@
                   <span class="weight">(150g)</span>
                 </div>
                 <div class="wishlist-container">
-                    <button class="wishlist-button" onclick="toggleWishlist(this)">
+                    <!-- Wishlist Button -->
+                    <!-- <button class="wishlist-button" onclick="toggleWishlist(this)">
                         <i class="far fa-heart"></i>
+                    </button> -->
+                
+                    <!-- Description Button with Icon -->
+                    <button class="description-button" data-bs-toggle="modal" data-bs-target="#descriptionModal">
+                        <i class="fas fa-info-circle"></i> Description
                     </button>
-                    <button class="description-button" data-bs-toggle="modal" data-bs-target="#descriptionModal">Description</button>
+                
+                    <!-- Reviews Button with Icon -->
+                    <button class="description-button" data-bs-toggle="modal" data-bs-target="#reviewsModal">
+                        <i class="fas fa-star"></i> Reviews
+                    </button>
                 </div>
+                
                 
                 
                 <div class="add-to-cart-container">
-                  <div class="counter">
-                    <button class="minus">
-                      <svg
-                        width="12"
-                        height="4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <defs>
-                          <path
-                            d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
-                            id="a"
-                          />
-                        </defs>
-                        <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
-                      </svg>
+                    <div class="counter">
+                        <button class="minus">
+                        <svg
+                            width="12"
+                            height="4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <defs>
+                            <path
+                                d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                                id="a"
+                            />
+                            </defs>
+                            <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
+                        </svg>
+                        </button>
+                        <span class="count">0</span>
+                        <button class="plus">
+                        <svg
+                            width="12"
+                            height="12"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <defs>
+                            <path
+                                d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                                id="b"
+                            />
+                            </defs>
+                            <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
+                        </svg>
+                        </button>
+                    </div>
+                    <button class="wishlist-button" onclick="toggleWishlist(this)">
+                        <i class="far fa-heart"></i>
                     </button>
-                    <span class="count">0</span>
-                    <button class="plus">
-                      <svg
-                        width="12"
-                        height="12"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <defs>
-                          <path
-                            d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
-                            id="b"
-                          />
-                        </defs>
-                        <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
-                      </svg>
+                    <button class="add-to-cart">
+                        <span>
+                        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                            d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                            fill="#69707D"
+                            fill-rule="nonzero"
+                            />
+                        </svg>
+                        </span>
+                        <span><a href="service.html" style="color: white;">Add to cart</a></span>
                     </button>
-                  </div>
-                  <button class="add-to-cart">
-                    <span>
-                      <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
-                          fill="#69707D"
-                          fill-rule="nonzero"
-                        />
-                      </svg>
-                    </span>
-                    <span><a href="service.html" style="color: white;">Add to cart</a></span>
-                  </button>
                 </div>
-              </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
         <!-- Description Modal-->
         <div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="descriptionModalLabel" aria-hidden="true">
@@ -524,6 +538,114 @@
                 </div>
             </div>
         </div>
+        <!-- Review Modal -->
+        <!-- Reviews Modal -->
+        <div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Product Reviews</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Tabs for Navigation -->
+                        <ul class="nav nav-pills mb-3 justify-content-center" id="reviewsTab">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="write-review-tab" data-bs-toggle="pill" data-bs-target="#write-review">Write a Review</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="view-reviews-tab" data-bs-toggle="pill" data-bs-target="#view-reviews">Customer Reviews</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- Write a Review Section -->
+
+                            <div class="tab-pane fade show active" id="write-review">
+                                <!-- <h4 class="text-center">Write a Review</h4> -->
+                                <label class="form-label">Rate this product:</label>
+                                <div id="rating-review" class="d-flex gap-3 justify-content-center">
+                                    <span class="edit-star" data-value="1">&#9733;</span>
+                                    <span class="edit-star" data-value="2">&#9733;</span>
+                                    <span class="edit-star" data-value="3">&#9733;</span>
+                                    <span class="edit-star" data-value="4">&#9733;</span>
+                                    <span class="edit-star" data-value="5">&#9733;</span>
+                                </div>
+
+                                <label class="form-label mt-3">Your Review:</label>
+                                <textarea class="form-control" rows="5" placeholder="Share your experience..."></textarea>
+
+                                <button class="btn attribute mt-5 w-100">Submit Review</button>
+                            </div>
+                            <!-- Customer Reviews Section -->
+                            <div class="tab-pane fade " id="view-reviews">
+                                <h4 class="text-center">What Customers Say</h4>
+                                <div class="stars-overall text-center my-2">
+                                    ⭐⭐⭐⭐☆ <strong>(4.2/5 based on 569 reviews)</strong>
+                                </div>
+                                <div class="review-list">
+                                    <div class="customer-review">
+                                        <strong>Aryan K.</strong> - ⭐⭐⭐⭐⭐  
+                                        <p>Delicious and healthy! Loved the traditional flavor.</p>
+                                    </div>
+                                    <div class="customer-review">
+                                        <strong>Meera S.</strong> - ⭐⭐⭐☆☆  
+                                        <p>A little too sweet for my taste, but overall good.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .nav-pills .nav-link {
+                font-size: 1.1rem;
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: 8px;
+                transition: 0.3s;
+            }
+
+            .nav-pills .nav-link.active {
+                background-color: #ff9800;
+                color: white;
+            }
+
+            .review-list {
+                max-height: 300px;
+                overflow-y: auto;
+                padding: 10px;
+                border-radius: 8px;
+                background: #f8f9fa;
+            }
+
+            .customer-review {
+                background: white;
+                padding: 12px;
+                border-radius: 6px;
+                margin-bottom: 10px;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .edit-star {
+                font-size: 24px;
+                cursor: pointer;
+                color: #ccc;
+            }
+
+            .edit-star:hover,
+            .edit-star.active {
+                color: gold;
+            }
+
+        </style>
         
         <!--Unique Selling Points-->
         <section class="text-center py-4">
