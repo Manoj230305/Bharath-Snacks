@@ -78,143 +78,106 @@
     </nav> -->
     <header class="header">
       <div class="container-fluid">
-          <div class="row py-1 border-bottom align-items-center justify-content-between">
-              <!-- Hamburger Menu Icon -->
-              <div class="col-2 d-flex align-items-center d-lg-none">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-              </div>
-  
-              <!-- Title Section -->
-              <div class="col-8 text-center d-lg-none">
-                  <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-center">
-                      <h2 class="m-0" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
-                  </a>
-              </div>
-  
-              <!-- Icons Section -->
-              <div class="col-2 d-flex justify-content-end align-items-center d-lg-none">
-                  <ul class="d-flex justify-content-end list-unstyled m-0">
-                      <li class="position-relative">
-                          <a href="#" class="p-2 mx-1">
-                              <svg width="24" height="24"><use xlink:href="#user"></use></svg>
-                          </a>
-                      </li>
-                      <li class="position-relative">
-                          <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#wishlist" aria-controls="offcanvasWishlist">
-                              <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
-                              <span class="count-popout" id="wishlist-counter">1</span>
-                          </a>
-                      </li>
-                      <li class="position-relative">
-                          <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
-                              <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
-                              <span class="count-popout" id="shopping-cart-counter">1</span>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-  
-              <!-- Logo Section for Desktop -->
-              <div class="col-12 col-lg-4 text-center d-none d-lg-flex justify-content-center">
-                  <div class="d-flex align-items-center my-3 my-sm-0">
-                      <a href="index.html" class="navbar-brand d-flex align-items-center">
-                          <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
-                          <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
-                      </a>
-                  </div>
-              </div>
-  
-              <!-- Search Bar Section for Desktop -->
-              <div class="col-12 col-lg-3 d-none d-lg-flex py-2 justify-content-center">
-                  <div class="search-bar col row bg-light p-2 align-items-center" style="border-radius: 20px;">
-                      <div class="col">
-                          <form id="search-form" class="text-center" action="index.html" method="post">
-                              <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
-                          </form>
-                      </div>
-                      <div class="col-auto">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                              <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-                          </svg>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Navigation Links for Desktop -->
-              <div class="col-12 col-lg-4 d-none d-lg-flex py-1 justify-content-center">
-                  <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center align-items-center text-dark">
-                      <li class="nav-item nav-link">
-                          <a href="index.html" class="nav-link">Home</a>
-                      </li>
-                      <li class="nav-item nav-link">
-                          <a href="#section_2" class="nav-link">About</a>
-                      </li>
-                      <li class="nav-item nav-link">
-                          <a href="product.html" class="nav-link">Products</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
-                          <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                              <li><a href="index.html" class="dropdown-item">About Us</a></li>
-                              <li><a href="index.html" class="dropdown-item">Shop</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </div>
-  
-              <!-- Icons Section for Desktop -->
-              <div class="col-12 col-lg-1 d-none d-lg-flex mt-4 px-4 gap-5 align-items-center justify-content-center">
-                  <ul class="d-flex justify-content-end list-unstyled m-0">
-                      <li class="position-relative">
-                          <a href="#" class="">
-                              <svg width="24" height="24"><use xlink:href="#user"></use></svg>
-                          </a>
-                      </li>
-                      <li class="position-relative">
-                          <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#wishlist" aria-controls="offcanvasWishlist">
-                              <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
-                              <span class="count-popout" id="wishlist-counter">1</span>
-                          </a>
-                      </li>
-                      <li class="position-relative">
-                          <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
-                              <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
-                              <span class="count-popout" id="shopping-cart-counter">1</span>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
+        <div class="row py-3 border-bottom align-items-center">
+          <!-- Logo Section -->
+          <div class="col-6 col-md-4 text-center text-md-start d-flex gap-3 justify-content-center justify-content-md-start align-items-center">
+            <div class="d-flex align-items-center my-3 my-md-0">
+              <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <!-- <img src="img/bnac/logo.png" alt="Logo" class="me-2 logo-img" style="height:50px; width: auto;"> -->
+                <img src="img/logo.gif" alt="Logo" class="me-2 logo-img">
+                <!-- <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2> -->
+              </a>
+            </div>
           </div>
-      </div>
   
-      <!-- Offcanvas Navbar -->
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <!-- Hamburger Button for Mobile -->
+          <div class="col-6 d-md-none text-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa-solid fa-bars"></span>
+            </button>
           </div>
-          <div class="offcanvas-body">
-              <ul class="navbar-nav opt-nav list-unstyled d-flex flex-column gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
-                  <li class="nav-item nav-link">
-                      <a href="index.html" class="nav-link">Home</a>
-                  </li>
-                  <li class="nav-item nav-link">
-                      <a href="#section_2" class="nav-link">About</a>
-                  </li>
-                  <li class="nav-item nav-link">
-                      <a href="product.html" class="nav-link">Products</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
-                      <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                          <li><a href="index.html" class="dropdown-item">About Us</a></li>
-                          <li><a href="index.html" class="dropdown-item">Shop</a></li>
-                      </ul>
-                  </ul>
+  
+          <!-- Search Bar Section (Desktop only) -->
+          <div class="col-md-6 offset-md-0 col-lg-3 d-none d-md-block">
+            <div class="search-bar row bg-light p-2 align-items-center" style="border-radius: 20px;">
+              <div class="col-11 col-md-10">
+                <form id="search-form" class="text-center" action="index.html" method="post">
+                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="border-radius: 20px;">
+                </form>
               </div>
+              <div class="col-1 px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                </svg>
+              </div>
+            </div>
           </div>
+  
+          <!-- Navigation Links (Desktop only) -->
+          <div class="col-lg-4 py-1 d-none d-md-block">
+            <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
+              <li class="nav-item nav-link">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item nav-link">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item nav-link">
+                <a href="product.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Bulk Order</a>
+                <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                  <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                  <li><a href="index.html" class="dropdown-item">Shop</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Icons Section -->
+          <div class="col-md-7 col-lg-1 d-flex align-items-center justify-content-center justify-content-md-end icons">
+            <ul class="d-flex justify-content-end list-unstyled m-0 iconset">
+              <li>
+                <a href="#" class="p-2 mx-1">
+                  <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                  <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                  <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Collapsible Navigation for Mobile -->
+        <div class="collapse navbar-collapse d-md-none" id="navbarNav">
+          <ul class="navbar-nav opt-nav list-unstyled d-flex flex-column gap-3 align-items-center text-dark">
+            <li class="nav-item nav-link">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item nav-link">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item nav-link">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle pe-3" role="button" id="pagesMobile" data-bs-toggle="dropdown" aria-expanded="false">Bulk Order</a>
+              <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pagesMobile">
+                <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                <li><a href="index.html" class="dropdown-item">Shop</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   

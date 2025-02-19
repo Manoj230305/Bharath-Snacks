@@ -43,17 +43,25 @@
         <div class="container-fluid">
           <div class="row py-3 border-bottom align-items-center">
             <!-- Logo Section -->
-            <div class="col-sm-4 col-lg-4 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
-              <div class="d-flex align-items-center my-3 my-sm-0">
+            <div class="col-6 col-md-4 text-center text-md-start d-flex gap-3 justify-content-center justify-content-md-start align-items-center">
+              <div class="d-flex align-items-center my-3 my-md-0">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
-                  <img src="img/bnac/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
-                  <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2>
+                  <!-- <img src="img/bnac/logo.png" alt="Logo" class="me-2 logo-img" style="height:50px; width: auto;"> -->
+                  <img src="img/logo.gif" alt="Logo" class="me-2 logo-img">
+                  <!-- <h2 class="m-2" style="color: rgb(147, 1, 1);">BHARATH SNACKS</h2> -->
                 </a>
               </div>
             </div>
-      
-            <!-- Search Bar Section -->
-            <div class="col-sm-6 offset-sm-2 py-2 offset-md-0 col-lg-3">
+    
+            <!-- Hamburger Button for Mobile -->
+            <div class="col-6 d-md-none text-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars"></span>
+              </button>
+            </div>
+    
+            <!-- Search Bar Section (Desktop only) -->
+            <div class="col-md-6 offset-md-0 col-lg-3 d-none d-md-block">
               <div class="search-bar row bg-light p-2 align-items-center" style="border-radius: 20px;">
                 <div class="col-11 col-md-10">
                   <form id="search-form" class="text-center" action="index.html" method="post">
@@ -67,22 +75,21 @@
                 </div>
               </div>
             </div>
-      
-            <!-- Navigation Links -->
-            <div class="col-lg-4 py-1">
+    
+            <!-- Navigation Links (Desktop only) -->
+            <div class="col-lg-4 py-1 d-none d-md-block">
               <ul class="navbar-nav opt-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center text-dark">
                 <li class="nav-item nav-link">
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item nav-link">
-                  <a href="#section_2" class="nav-link">About</a>
+                  <a href="about.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item nav-link">
                   <a href="product.html" class="nav-link">Products</a>
                 </li>
-                
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                  <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Bulk Order</a>
                   <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
                     <li><a href="index.html" class="dropdown-item">About Us</a></li>
                     <li><a href="index.html" class="dropdown-item">Shop</a></li>
@@ -90,10 +97,10 @@
                 </li>
               </ul>
             </div>
-      
+    
             <!-- Icons Section -->
-            <div class="col-sm-8 col-lg-1 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
-              <ul class="d-flex justify-content-end list-unstyled m-0">
+            <div class="col-md-7 col-lg-1 d-flex align-items-center justify-content-center justify-content-md-end icons">
+              <ul class="d-flex justify-content-end list-unstyled m-0 iconset">
                 <li>
                   <a href="#" class="p-2 mx-1">
                     <svg width="24" height="24"><use xlink:href="#user"></use></svg>
@@ -112,8 +119,30 @@
               </ul>
             </div>
           </div>
+    
+          <!-- Collapsible Navigation for Mobile -->
+          <div class="collapse navbar-collapse d-md-none" id="navbarNav">
+            <ul class="navbar-nav opt-nav list-unstyled d-flex flex-column gap-3 align-items-center text-dark">
+              <li class="nav-item nav-link">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item nav-link">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item nav-link">
+                <a href="product.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle pe-3" role="button" id="pagesMobile" data-bs-toggle="dropdown" aria-expanded="false">Bulk Order</a>
+                <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pagesMobile">
+                  <li><a href="index.html" class="dropdown-item">About Us</a></li>
+                  <li><a href="index.html" class="dropdown-item">Shop</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
     
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -413,58 +442,70 @@
      
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <!-- <h5 class="text-white mb-4">Our Logo</h5> -->
+    <div class="container-fluid bg-dark footer mt-5 py-3 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="row g-3 align-items-center">
+                <!-- Logo Column: Adjusted to move left -->
+                <div class="col-lg-2 col-md-6 text-start">
                     <img src="img/bnac/logo.png" alt="Company Logo" class="img-fluid" style="max-width: 100%; height: auto;">
-                </div>
-                
-
-                
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Company</h5>
+                </div>                
+    
+                <!-- Company Info -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Company</h5>
                     <a class="btn btn-link" href="">Home</a>
                     <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Products</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Policies</h5>
+    
+                <!-- Policies -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Policies</h5>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Refund and Returns</a>
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms of Services</a>
                     <a class="btn btn-link" href="">Refund Policy</a>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div> -->
+    
+                <!-- Office Info -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Our Office</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2/143-5, Thirumalpuram, Veerapandi Road, Oomachikulam, Madurai - 625014.</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 97861 00191 / +91 72992 99294</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@bharathsnacks.in</p>
-                    <div class="d-flex pt-3">
+                    <h5 class="text-white mb-3">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i>2/143-5, Thirumalpuram, Veerapandi Road, Oomachikulam, Madurai - 625014.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>+91 97861 00191 / +91 72992 99294</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-2"></i>info@bharathsnacks.in</p>
+                    <div class="d-flex pt-2">
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+    
+                <!-- Footer Image Column: Moved to the Right -->
+                <div class="col-lg-3 col-md-6 text-end">
+                    <img src="img/bnac/deliv.png" alt="Footer Image" class="img-fluid" style="max-width: 100%; height: auto;">
+                </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+    
+    
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">BHARATH SNACKS</a>, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
 
 
 
