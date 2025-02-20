@@ -1288,6 +1288,13 @@
                     });
                 });
             });
+
+            document.querySelectorAll('.product-item').forEach(function(card) {
+                card.addEventListener('click', function() {
+                    window.location.href = 'product_details2.html';
+                });
+            });
+
         </script>
 
         <div class="container-fluid bg-dark footer mt-5 py-3 wow fadeIn" data-wow-delay="0.1s">

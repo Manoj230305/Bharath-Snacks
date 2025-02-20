@@ -279,8 +279,7 @@ header nav {
 
 header a {
   color: #fff;
-  text-decoration: none;
-  font-size: 14px;
+  text-decoration: none;;
 }
 
 header .cart {

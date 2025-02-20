@@ -141,6 +141,9 @@ body{
 /*** Navbar ***/
 
 /* Header Styles */
+  /* header{
+    
+} */
 .header {
     position: fixed;
     top: 0;
