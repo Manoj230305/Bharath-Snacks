@@ -349,18 +349,23 @@ body {
 
 /* Hover effect to change background and scale */
 .wishlist-button:hover {
-  background-color: #ff7b00;
+  background-color: red;
   color: white; /* Text and icon change color on hover */
   transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
 /* Active state styling */
 .wishlist-button.active {
-  border-color: #f38282; /* Red border when active */
+  border-color: red; /* Red border when active */
 }
 
 .wishlist-button.active i {
-  color: #f38282; /* Red icon color when active */
+  color: red; /* Red icon color when active */
+}
+
+.wishlist-button.active:hover {
+  color: red; /* Red icon color when active */
+  background-color: white;
 }
 
 /* Optional: Add a subtle shadow effect to enhance the button's elegance */

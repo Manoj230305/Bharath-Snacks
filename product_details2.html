@@ -477,12 +477,12 @@
                     </button> -->
                 
                     <!-- Description Button with Icon -->
-                    <button class="description-button" data-bs-toggle="modal" data-bs-target="#descriptionModal">
+                    <button class="btn btn-1 text-dark mb-3" data-bs-toggle="modal" data-bs-target="#descriptionModal">
                         <i class="fas fa-info-circle"></i> Description
                     </button>
                 
                     <!-- Reviews Button with Icon -->
-                    <button class="description-button" data-bs-toggle="modal" data-bs-target="#reviewsModal">
+                    <button class="btn btn-1 text-dark mb-3" data-bs-toggle="modal" data-bs-target="#reviewModal">
                         <i class="fas fa-star"></i> Reviews
                     </button>
                 </div>
@@ -490,7 +490,7 @@
                 
                 
                 <div class="add-to-cart-container">
-                    <div class="counter">
+                    <div class="counter" style="border: 2px solid var(--yellow);">
                         <button class="minus">
                         <svg
                             width="12"
@@ -551,13 +551,13 @@
                 <div class="modal-content">
                     <div class="modal-body text-center m-4">
                         <h2>
-                            <label class="form-label">How would you rate this item?</label>
+                            <label class="form-label">Ratings</label>
                         </h2>
                         <div id="rating-description" class="d-flex gap-3 justify-content-center">
-                            <span class="edit-star" data-value="1">&#9733;</span>
-                            <span class="edit-star" data-value="2">&#9733;</span>
-                            <span class="edit-star" data-value="3">&#9733;</span>
-                            <span class="edit-star" data-value="4">&#9733;</span>
+                            <span class="edit-star gold" data-value="1">&#9733;</span>
+                            <span class="edit-star gold" data-value="2">&#9733;</span>
+                            <span class="edit-star gold" data-value="3">&#9733;</span>
+                            <span class="edit-star gold" data-value="4">&#9733;</span>
                             <span class="edit-star" data-value="5">&#9733;</span>
                         </div>
                         <hr>
@@ -675,6 +675,17 @@
             .edit-star:hover,
             .edit-star.active {
                 color: gold;
+            }
+
+            .minus:hover{
+                background-color: var(--yellow);
+                transition: 0.5s;
+            }
+
+            .plus:hover{
+                background-color: var(--yellow);
+                transition: 0.5s;
+
             }
 
         </style>
@@ -957,7 +968,8 @@
                 <div class="text-center">
                     <h2 class="fw-bold">Customer Reviews</h2>
                     <p class="sub-text text-muted">What our customers say about us</p>
-                    <button type="button" class="btn btn-1 text-dark mb-3" data-bs-toggle="modal" data-bs-target="#reviewModal">Write a Review</button>                </div>
+                    <!-- <button type="button" class="btn btn-1 text-dark mb-3" data-bs-toggle="modal" data-bs-target="#reviewModal">Write a Review</button>                 -->
+                </div>
                 <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <!-- First Slide -->
