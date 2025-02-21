@@ -537,7 +537,18 @@
     </style>
 
     <!-- Product Ends -->
-    <img src="img/bnac/green.png" width="100%" >
+    <div class="position-relative">
+        <img src="img/bnac/green.png" width="100%" class="img-fluid">
+        <div class="position-absolute start-50 translate-middle text-center" style="top: 40%;">
+            <h1 class="fw-bold wow fadeIn " data-wow-delay="0.3s" 
+                style="font-size: 3rem; color: #0A2A5A;" id="responsiveText">
+                "Explore Wide Range of varieties of our products!"
+            </h1>
+        </div>
+    </div>
+    
+    
+    <!-- <img src="img/bnac/green.png" width="100%" > -->
     <!-- <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/bnac/green.png">
         <div class="container py-5">
             <div class="row g-5">
@@ -677,6 +688,31 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        function adjustTextSize() {
+        const textElement = document.getElementById("responsiveText");
+        const screenWidth = window.innerWidth;
+
+            if (screenWidth < 576) { 
+                // Phones
+                textElement.style.fontSize = "1.5rem";
+            } else if (screenWidth >= 576 && screenWidth < 768) { 
+                // Tablets (small)
+                textElement.style.fontSize = "2rem";
+            } else if (screenWidth >= 768 && screenWidth < 1200) { 
+                // Laptops and larger tablets
+                textElement.style.fontSize = "2.5rem";
+            } else { 
+                // Desktops (large screens)
+                textElement.style.fontSize = "3rem";
+            }
+        }
+
+        // Adjust size on load and resize
+        window.onload = adjustTextSize;
+        window.onresize = adjustTextSize;
     </script>
 
     <script src="js/main.js"></script>
