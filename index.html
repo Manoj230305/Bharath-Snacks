@@ -243,7 +243,7 @@
         </div>
         <div class="offcanvas-body d-flex flex-column justify-content-between">
             <div>
-                <div class="cart-item d-flex justify-content-between align-items-center">
+                <div class="cart-item position-relative d-flex justify-content-between align-items-center p-2 rounded shadow-sm">
                     <div class="d-flex align-items-center">
                         <img src="img/bnac/muk.png" alt="Product" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
                         <div>
@@ -274,7 +274,23 @@
                             style="height: 30px;width: 30px;"
                         />
                     </div>
+                
+                    <!-- Close Button -->
+                    <button type="button" class="btn-close position-absolute small-close" onclick="removeCartItem(this)" aria-label="Close" style="height: 4px;"></button>
                 </div>
+
+                <style>
+                    .small-close {
+                        top: 8px;
+                        right: 8px;
+                        width: 14px;
+                        height: 9px;
+                        opacity: 0.7;
+                    }
+
+                </style>
+                
+                
                 <hr>
                 <div class="d-flex justify-content-between">
                     <h6 class="m-0">Subtotal</h6>
