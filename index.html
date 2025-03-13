@@ -597,13 +597,13 @@
                     <!-- First Slide -->
                     <div class="carousel-item active">
                         <div class="row gx-4">
-                            <div class="col-md-6 col-lg-4 col-xl-3" onclick="window.location.href='product_details2.html'">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <div class="product-item animated-card">
                                     <div class="position-relative">
                                         <img class="img-fluid" src="img/bnac/ka.png" alt="">
                                         <div class="product-overlay">
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-heart"></i></a>
-                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href="product_details2.html"><i class="bi bi-cart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1" href="#"><i class="bi bi-heart"></i></a>
+                                            <a class="btn btn-square btn-secondary rounded-circle m-1 cart-icon" href="#"><i class="bi bi-cart"></i></a>
                                         </div>
                                     </div>
                                     <div class="text-center p-4">
@@ -745,6 +745,22 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </div>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <img src="img/bnac/ka.png" alt="Salad Napoli" class="cart-img">
+            <div class="cart-details">
+                <h6><strong>Chikkis (350g)</strong></h6>
+                <p><span class="check-icon">✔</span> Successfully added to your Cart</p>
+                <div class="cart-buttons">
+                    <a href="#" class="btn btn-danger" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart">VIEW CART</a>
+                    <a href="service.html" class="btn btn-dark">CHECKOUT</a>
+                </div>
+            </div>
+            <span class="close-btn">&times;</span>
         </div>
     </div>
     <style>
@@ -1491,12 +1507,11 @@
     
 
     <script src="js/main.js"></script>
-    <script>
+    <!-- <script>
         function updateQuantity(change) {
         var quantityElement = document.getElementById("quantity");
         var currentQuantity = parseInt(quantityElement.innerText);
     
-        // Ensure quantity is not negative
         var newQuantity = currentQuantity + change;
         if (newQuantity >= 0) {
           quantityElement.innerText = newQuantity;
@@ -1509,7 +1524,7 @@
             });
         });
 
-    </script>
+    </script> -->
 
     <script>
         // Products data for dynamic updates
@@ -1605,6 +1620,32 @@
         });
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartIcon = document.querySelector(".cart-icon");
+            const cartModal = document.getElementById("cartModal");
+            const closeBtn = document.querySelector(".close-btn");
+
+            // Open modal when cart icon is clicked
+            cartIcon.addEventListener("click", function (e) {
+                e.preventDefault();
+                cartModal.style.display = "block";
+            });
+
+            // Close modal when close (×) button is clicked
+            closeBtn.addEventListener("click", function () {
+                cartModal.style.display = "none";
+            });
+
+            // Close modal if clicked outside the modal
+            window.addEventListener("click", function (event) {
+                if (event.target === cartModal) {
+                    cartModal.style.display = "none";
+                }
+            });
+        });
+
+    </script>
 
 
 
