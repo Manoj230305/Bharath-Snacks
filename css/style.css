@@ -96,6 +96,9 @@ body{
     opacity: 1;
 }
 
+.offcanvas-backdrop {
+  background-color: transparent !important;
+}
 
 /*** Button ***/
 .btn {
@@ -783,11 +786,6 @@ body{
       display: none !important; /* Hide toast in mobile view */
     }
   }
-
-
-
-
-
   
 /*** Testimonial ***/
 .testimonial-img {
@@ -846,12 +844,18 @@ body{
 }
 
 .testimonial-carousel .owl-nav {
-    margin-top: 30px;
-    display: flex;
+  position: absolute;
+  bottom: -50px; /* Adjust the value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px; /* Adds spacing between buttons */
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    margin: 0 10px;
     margin-right: 15px;
     width: 45px;
     height: 45px;
@@ -863,6 +867,7 @@ body{
     box-shadow: 0 0 45px rgba(0, 0, 0, .2);
     font-size: 22px;
     transition: .5s;
+    /* visibility: hidden; */
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,

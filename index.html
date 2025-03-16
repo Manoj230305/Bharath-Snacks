@@ -1645,6 +1645,14 @@
             });
         });
 
+        document.addEventListener("shown.bs.offcanvas", function () {
+            let backdrop = document.querySelector(".offcanvas-backdrop");
+            if (backdrop) {
+                backdrop.remove();
+            }
+        });
+
+
     </script>
 
 
