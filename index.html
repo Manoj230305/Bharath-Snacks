@@ -1620,40 +1620,38 @@
         });
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const cartIcon = document.querySelector(".cart-icon");
-            const cartModal = document.getElementById("cartModal");
-            const closeBtn = document.querySelector(".close-btn");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cartOffcanvas = document.getElementById("shoppingCart");
 
-            // Open modal when cart icon is clicked
-            cartIcon.addEventListener("click", function (e) {
-                e.preventDefault();
-                cartModal.style.display = "block";
-            });
+        if (!cartOffcanvas) return;
 
-            // Close modal when close (×) button is clicked
-            closeBtn.addEventListener("click", function () {
-                cartModal.style.display = "none";
-            });
-
-            // Close modal if clicked outside the modal
-            window.addEventListener("click", function (event) {
-                if (event.target === cartModal) {
-                    cartModal.style.display = "none";
+        // Close offcanvas when clicking outside
+        document.addEventListener("click", function (event) {
+            if (!cartOffcanvas.contains(event.target) && !event.target.closest("[data-bs-toggle='offcanvas']")) {
+                let offcanvasInstance = bootstrap.Offcanvas.getInstance(cartOffcanvas);
+                if (offcanvasInstance) {
+                    offcanvasInstance.hide();
                 }
-            });
-        });
-
-        document.addEventListener("shown.bs.offcanvas", function () {
-            let backdrop = document.querySelector(".offcanvas-backdrop");
-            if (backdrop) {
-                backdrop.remove();
             }
         });
 
+        cartOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+            document.body.classList.remove("offcanvas-open");
+            document.body.style.overflow = ""; // Ensure scrolling is re-enabled
+            removeBackdrops(); // Remove any leftover backdrops
+        });
 
-    </script>
+        cartOffcanvas.addEventListener("shown.bs.offcanvas", function () {
+            document.body.style.overflow = "hidden";
+        });
+
+        function removeBackdrops() {
+            document.querySelectorAll(".offcanvas-backdrop").forEach(backdrop => backdrop.remove());
+        }
+    });
+</script>
+
 
 
 
