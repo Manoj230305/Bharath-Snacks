@@ -513,7 +513,7 @@ header .cart::after {
   margin-top: 20px;
   background: #f4f4f4;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 @media (max-width: 768px) {
