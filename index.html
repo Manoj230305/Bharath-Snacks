@@ -183,25 +183,94 @@
         
                 <!-- Icons Section -->
                 <div class="col-md-7 col-lg-1 d-flex align-items-center justify-content-center justify-content-md-end icons">
-                    <ul class="d-flex justify-content-end list-unstyled m-0 iconset">
+                    <ul class="d-flex align-items-center list-unstyled m-0 gap-3 iconset">
                         <li>
-                            <a href="#" class="p-2 mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="ANVK">
-                                <img src="img/bnac/user.png" alt="User Profile" width="24" height="24" style="filter: grayscale(100%);">
+                            <a href="#" class="icon-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="ANVK">
+                                <img src="img/bnac/user.png" alt="User Profile" width="24" height="24">
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#wishlistCart" aria-controls="offcanvasWishlist">
-                                <img src="img/bnac/wishlist.png" alt="Wishlist" width="24" height="24" style="filter: grayscale(100%);">
+                            <a href="#" class="icon-link" data-bs-toggle="offcanvas" data-bs-target="#wishlistCart" aria-controls="offcanvasWishlist">
+                                <img src="img/bnac/wishlist.png" alt="Wishlist" width="24" height="24">
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
-                                <img src="img/bnac/shopping-cart.png" alt="Shopping Cart" width="24" height="24" style="filter: grayscale(100%);">
+                        <li class="cart-container">
+                            <a href="#" class="cart-link position-relative" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="offcanvasCart">
+                                <img src="img/bnac/shopping-cart.png" alt="Shopping Cart" width="30" height="30">
+                                <span class="cart-badge">0</span>
                             </a>
+                            <span class="cart-amount">₹0.00</span>
                         </li>
-                    </ul>                   
+                    </ul>
                 </div>
+                
             </div>
+            <style>
+                .icons {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .iconset {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px; /* Consistent spacing */
+                }
+                
+                .icon-link img {
+                    transition: 0.3s ease-in-out;
+                }
+                
+                .icon-link:hover img {
+                    filter: brightness(80%);
+                }
+                
+                .cart-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .cart-link {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .cart-badge {
+                    position: absolute;
+                    top: -5px;
+                    right: -8px;
+                    background: #d9534f;
+                    color: white;
+                    font-size: 12px;
+                    font-weight: bold;
+                    border-radius: 50%;
+                    padding: 2px 6px;
+                    min-width: 20px;
+                    text-align: center;
+                }
+                
+                .cart-amount {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #d9534f;
+                    text-align: center;
+                    margin-top: 2px;
+                }
+                
+                /* Mobile Responsive */
+                @media (max-width: 768px) {
+                    .iconset {
+                        gap: 10px;
+                    }
+                    .cart-container {
+                        gap: 3px;
+                    }
+                }
+            </style>
     
           <!-- Collapsible Navigation for Mobile -->
           <div class="collapse navbar-collapse d-md-none" id="navbarNav">
