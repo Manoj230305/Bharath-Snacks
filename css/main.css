@@ -139,7 +139,7 @@ body {
 
 
 /* Navbar */
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,7 +206,7 @@ body {
 .avatar img {
   height: 50px;
   width: 50px;
-}
+} */
 
 /* Main */
 .main {
@@ -626,7 +626,7 @@ body {
 }
 
 /* Cart */
-.cart {
+/* .cart {
   position: relative;
 }
 
@@ -699,7 +699,7 @@ body {
 .cart-item .total-price {
   color: var(--black);
   font-weight: 700;
-}
+} */
 
 .checkout.empty {
   display: none;
